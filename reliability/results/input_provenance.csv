@@ -1,0 +1,3 @@
+﻿domain,workbook,sha256,reviewer1_rows,reviewer2_rows,reviewer1_blank_id_rows,reviewer2_blank_id_rows,valid_overlap_ids,exact_id_set_match
+software_developers,software_developer_checkreliability.xlsx,bf7ed11c91ed650aa35a8eb62e3e6c21be3484a137a046ffa85affcd048abf2a,32,32,0,0,32,True
+journalists,journalist_checkreliability.xlsx,d4205e96796b877a029bb3f648a1a2ed6f0b52965c06bd90aa8115b64616ef09,37,37,2,2,35,True

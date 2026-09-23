@@ -1,0 +1,10 @@
+﻿topic,manuscript_statement,executed_pipeline,consistent,impact
+HPO objective,Exact normalized macro F1,Exact normalized macro F1 (eval_exact_f1),True,The manuscript distinguishes exact HPO from containment-based primary reporting.
+Canonicalization,Only exact normalized duplicates are removed,Normalization-aware exact deduplication only,True,Distinct nested phrases are preserved in both the manuscript and code.
+One-to-one matching,Maximum-cardinality bipartite matching at each cascade level,Deterministic maximum-cardinality bipartite matching at each cascade level,True,The stated and executed matching procedures are prediction-order invariant.
+Containment definition,One normalized token sequence is a contiguous subsequence of the other,One normalized token sequence is a contiguous subsequence of the other,True,The metric definition matches the implementation.
+Optuna sampler,TPESampler seeded with seed 13,TPESampler(seed=13),True,The seeded HPO procedure is described consistently.
+BART chunk targets,Source-visible chunk targets with deterministic token-overlap fallback,"Source-visible skills are assigned to matching chunks, with deterministic fallback",True,The BART chunk-target procedure and its remaining limitation are aligned.
+Final scoring interface,Same normalization and one-to-one scoring for all five systems,Same rules and scorer are applied to raw predictions for all five systems,True,Arithmetic comparison is consistent after exact test-ID alignment.
+Prompt-development overlap,Same canonical test identifiers; prompt-safe split implied,Five IT-all test IDs were used in prompt development; all other configurations have zero overlap,False,IT-all and the six-skill IT mean require a disclosed sensitivity result.
+Output-format compliance,Necessary diagnostic for BART and prompted models,Raw API responses and request logs are not retained; only parsed workbooks survive,False,Historical provider-level format compliance cannot be reconstructed honestly.

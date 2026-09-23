@@ -1,0 +1,17 @@
+﻿label_type,metric,label,avg,total_items,overlap_total
+must_have,exact_ratio,review1,0.5704925189416189,904,522
+must_have,exact_ratio,review2,0.5411560530431858,981,522
+must_have,bm25_ratio,review1,0.9738395098195762,904,887
+must_have,bm25_ratio,review2,0.9532523675517511,981,930
+must_have,embed_ratio,review1,0.9239673404274296,904,839
+must_have,embed_ratio,review2,0.8869460315103053,981,859
+must_have,hybrid_ratio,review1,0.9511198726703416,904,865
+must_have,hybrid_ratio,review2,0.8884168142924368,981,858
+must_have,merge_exact_ratio,review1,0.5704925189416189,904,522
+must_have,merge_exact_ratio,review2,0.5411560530431858,981,522
+must_have,merge_bm25_ratio,review1,0.9482894912350904,391,374
+must_have,merge_bm25_ratio,review2,0.8920868300700234,425,374
+must_have,merge_embed_ratio,review1,0.9194739869386102,832,767
+must_have,merge_embed_ratio,review2,0.8746771335274826,889,767
+must_have,merge_hybrid_ratio,review1,0.9492418005478828,847,808
+must_have,merge_hybrid_ratio,review2,0.8819615233460307,931,808

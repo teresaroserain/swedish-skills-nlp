@@ -1,0 +1,24 @@
+EVALUATION PIPELINE TASK-UNADAPTED CONTROL VERSUS FINE-TUNED SUMMARY
+
+Primary metric: exact normalized macro F1.
+Controls and fine-tuned outputs use identical test IDs, gold labels,
+prediction rules, and the same centralized scorer.
+
+Overall mean across 18 domain-skill configurations per family:
+- BART: control=0.000050, fine-tuned=0.333892, delta=+0.333841
+- BERT: control=0.034087, fine-tuned=0.440474, delta=+0.406387
+
+Mean exact normalized macro F1 by domain:
+- BART/it: control=0.000064, fine-tuned=0.332614, delta=+0.332549
+- BART/journal: control=0.000000, fine-tuned=0.314530, delta=+0.314530
+- BART/merged: control=0.000087, fine-tuned=0.354531, delta=+0.354444
+- BERT/it: control=0.040538, fine-tuned=0.438092, delta=+0.397554
+- BERT/journal: control=0.027889, fine-tuned=0.429559, delta=+0.401670
+- BERT/merged: control=0.033835, fine-tuned=0.453771, delta=+0.419936
+
+Fine-tuning improved exact macro F1 in 36/36 configurations; 0 were unchanged.
+
+Interpretation note:
+These are task-unadapted controls, not architecture-matched zero-shot
+systems. BERT uses a fixed random BIO classification head; BART uses
+the pretrained denoising checkpoint without task-specific updates.

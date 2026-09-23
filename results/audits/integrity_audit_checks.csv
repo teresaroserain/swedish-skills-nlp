@@ -1,0 +1,109 @@
+﻿name,status,checked_items,details
+raw_xlsx_to_processed_it,pass,315,"IDs, text, and all five gold-label lists match"
+raw_xlsx_to_processed_journal,pass,322,"IDs, text, and all five gold-label lists match"
+raw_xlsx_to_processed_merged,pass,637,"IDs, text, and all five gold-label lists match"
+raw_annotation_duplicate_policy,pass,1,Journalism duplicate ID occurs twice; first occurrence is retained consistently
+split_it_all_skills,pass,315,Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels
+split_it_hard_skills,pass,313,Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels
+split_it_soft_skills,pass,306,Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels
+split_it_distinct_skills,pass,83,Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels
+split_it_must_have,pass,286,Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels
+split_it_nice_to_have,pass,166,Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels
+split_journal_all_skills,pass,322,Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels
+split_journal_hard_skills,pass,321,Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels
+split_journal_soft_skills,pass,283,Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels
+split_journal_distinct_skills,pass,197,Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels
+split_journal_must_have,pass,321,Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels
+split_journal_nice_to_have,pass,177,Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels
+split_merged_all_skills,pass,637,Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels
+split_merged_hard_skills,pass,634,Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels
+split_merged_soft_skills,pass,589,Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels
+split_merged_distinct_skills,pass,280,Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels
+split_merged_must_have,pass,607,Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels
+split_merged_nice_to_have,pass,343,Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels
+llm_raw_workbook_gpt_it,pass,315,Normalized JSONL preserves every nonblank workbook row and model output
+llm_raw_workbook_gpt_journal,pass,323,Normalized JSONL preserves every nonblank workbook row and model output
+llm_raw_workbook_gemini_it,pass,315,Normalized JSONL preserves every nonblank workbook row and model output
+llm_raw_workbook_gemini_journal,pass,323,Normalized JSONL preserves every nonblank workbook row and model output
+llm_raw_workbook_claude_it,pass,315,Normalized JSONL preserves every nonblank workbook row and model output
+llm_raw_workbook_claude_journal,pass,323,Normalized JSONL preserves every nonblank workbook row and model output
+fine_tuned_bart_it_all_skills,pass,157,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bart_it_distinct_skills,pass,42,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bart_it_hard_skills,pass,157,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bart_it_must_have,pass,143,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bart_it_nice_to_have,pass,83,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bart_it_soft_skills,pass,153,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bart_journal_all_skills,pass,161,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bart_journal_distinct_skills,pass,98,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bart_journal_hard_skills,pass,161,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bart_journal_must_have,pass,161,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bart_journal_nice_to_have,pass,88,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bart_journal_soft_skills,pass,142,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bart_merged_all_skills,pass,318,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bart_merged_distinct_skills,pass,140,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bart_merged_hard_skills,pass,317,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bart_merged_must_have,pass,303,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bart_merged_nice_to_have,pass,172,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bart_merged_soft_skills,pass,294,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bert_it_all_skills,pass,157,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bert_it_distinct_skills,pass,42,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bert_it_hard_skills,pass,157,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bert_it_must_have,pass,143,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bert_it_nice_to_have,pass,83,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bert_it_soft_skills,pass,153,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bert_journal_all_skills,pass,161,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bert_journal_distinct_skills,pass,98,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bert_journal_hard_skills,pass,161,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bert_journal_must_have,pass,161,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bert_journal_nice_to_have,pass,88,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bert_journal_soft_skills,pass,142,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bert_merged_all_skills,pass,318,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bert_merged_distinct_skills,pass,140,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bert_merged_hard_skills,pass,317,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bert_merged_must_have,pass,303,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bert_merged_nice_to_have,pass,172,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+fine_tuned_bert_merged_soft_skills,pass,294,"ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+central_per_ad_exact_containment_lexical,pass,15450,"Every per-advertisement ID, gold list, match count, precision, recall, and F1 was independently recomputed"
+raw_prediction_to_central_scorer,pass,15450,"Every central raw, retained, filtered, duplicate, and unsupported prediction traces to its neural ZIP or LLM workbook row"
+aggregate_from_per_ad,pass,90,"All exact, containment, lexical, and semantic macro/micro aggregates reproduce from the per-advertisement table"
+task_unadapted_bart_it_all_skills,pass,157,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bart_it_distinct_skills,pass,42,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bart_it_hard_skills,pass,157,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bart_it_must_have,pass,143,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bart_it_nice_to_have,pass,83,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bart_it_soft_skills,pass,153,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bart_journal_all_skills,pass,161,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bart_journal_distinct_skills,pass,98,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bart_journal_hard_skills,pass,161,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bart_journal_must_have,pass,161,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bart_journal_nice_to_have,pass,88,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bart_journal_soft_skills,pass,142,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bart_merged_all_skills,pass,318,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bart_merged_distinct_skills,pass,140,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bart_merged_hard_skills,pass,317,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bart_merged_must_have,pass,303,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bart_merged_nice_to_have,pass,172,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bart_merged_soft_skills,pass,294,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bert_it_all_skills,pass,157,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bert_it_distinct_skills,pass,42,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bert_it_hard_skills,pass,157,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bert_it_must_have,pass,143,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bert_it_nice_to_have,pass,83,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bert_it_soft_skills,pass,153,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bert_journal_all_skills,pass,161,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bert_journal_distinct_skills,pass,98,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bert_journal_hard_skills,pass,161,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bert_journal_must_have,pass,161,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bert_journal_nice_to_have,pass,88,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bert_journal_soft_skills,pass,142,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bert_merged_all_skills,pass,318,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bert_merged_distinct_skills,pass,140,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bert_merged_hard_skills,pass,317,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bert_merged_must_have,pass,303,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bert_merged_nice_to_have,pass,172,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bert_merged_soft_skills,pass,294,"ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+task_unadapted_bert_fixed_random_head,pass,18,All BERT controls use classifier-head checksum acb23b033fa94e13f9b4032420fb571eec551a7ec0e1ca93c454aa2a7c1ab198
+task_unadapted_metrics,pass,6180,All baseline IDs/gold and exact-containment-lexical per-ad scores were recomputed; every macro/micro aggregate reproduces
+before_after_tables,pass,36,"Every before, after, and delta value traces to the independently validated control and fine-tuned aggregate tables"
+prediction_rule_external_sources,pass,8,Every downloaded Snowball/KBLab source matches its recorded SHA-256 and byte count
+prediction_rule_derivation,pass,18,"All 18 rule files have row-level evidence, use train/validation only, and keep fragment prefixes empty"

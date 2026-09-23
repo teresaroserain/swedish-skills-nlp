@@ -1,0 +1,658 @@
+{
+  "status": "pass",
+  "release_root": "/Users/Yuki/KeywordE/Split_data/update_data/swedish-skill-extraction",
+  "checks": [
+    {
+      "name": "raw_xlsx_to_processed_it",
+      "status": "pass",
+      "checked_items": 315,
+      "details": "IDs, text, and all five gold-label lists match"
+    },
+    {
+      "name": "raw_xlsx_to_processed_journal",
+      "status": "pass",
+      "checked_items": 322,
+      "details": "IDs, text, and all five gold-label lists match"
+    },
+    {
+      "name": "raw_xlsx_to_processed_merged",
+      "status": "pass",
+      "checked_items": 637,
+      "details": "IDs, text, and all five gold-label lists match"
+    },
+    {
+      "name": "raw_annotation_duplicate_policy",
+      "status": "pass",
+      "checked_items": 1,
+      "details": "Journalism duplicate ID occurs twice; first occurrence is retained consistently"
+    },
+    {
+      "name": "split_it_all_skills",
+      "status": "pass",
+      "checked_items": 315,
+      "details": "Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels"
+    },
+    {
+      "name": "split_it_hard_skills",
+      "status": "pass",
+      "checked_items": 313,
+      "details": "Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels"
+    },
+    {
+      "name": "split_it_soft_skills",
+      "status": "pass",
+      "checked_items": 306,
+      "details": "Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels"
+    },
+    {
+      "name": "split_it_distinct_skills",
+      "status": "pass",
+      "checked_items": 83,
+      "details": "Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels"
+    },
+    {
+      "name": "split_it_must_have",
+      "status": "pass",
+      "checked_items": 286,
+      "details": "Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels"
+    },
+    {
+      "name": "split_it_nice_to_have",
+      "status": "pass",
+      "checked_items": 166,
+      "details": "Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels"
+    },
+    {
+      "name": "split_journal_all_skills",
+      "status": "pass",
+      "checked_items": 322,
+      "details": "Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels"
+    },
+    {
+      "name": "split_journal_hard_skills",
+      "status": "pass",
+      "checked_items": 321,
+      "details": "Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels"
+    },
+    {
+      "name": "split_journal_soft_skills",
+      "status": "pass",
+      "checked_items": 283,
+      "details": "Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels"
+    },
+    {
+      "name": "split_journal_distinct_skills",
+      "status": "pass",
+      "checked_items": 197,
+      "details": "Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels"
+    },
+    {
+      "name": "split_journal_must_have",
+      "status": "pass",
+      "checked_items": 321,
+      "details": "Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels"
+    },
+    {
+      "name": "split_journal_nice_to_have",
+      "status": "pass",
+      "checked_items": 177,
+      "details": "Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels"
+    },
+    {
+      "name": "split_merged_all_skills",
+      "status": "pass",
+      "checked_items": 637,
+      "details": "Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels"
+    },
+    {
+      "name": "split_merged_hard_skills",
+      "status": "pass",
+      "checked_items": 634,
+      "details": "Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels"
+    },
+    {
+      "name": "split_merged_soft_skills",
+      "status": "pass",
+      "checked_items": 589,
+      "details": "Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels"
+    },
+    {
+      "name": "split_merged_distinct_skills",
+      "status": "pass",
+      "checked_items": 280,
+      "details": "Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels"
+    },
+    {
+      "name": "split_merged_must_have",
+      "status": "pass",
+      "checked_items": 607,
+      "details": "Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels"
+    },
+    {
+      "name": "split_merged_nice_to_have",
+      "status": "pass",
+      "checked_items": 343,
+      "details": "Manifest and JSONL partitions exactly cover the canonical processed IDs and gold labels"
+    },
+    {
+      "name": "llm_raw_workbook_gpt_it",
+      "status": "pass",
+      "checked_items": 315,
+      "details": "Normalized JSONL preserves every nonblank workbook row and model output"
+    },
+    {
+      "name": "llm_raw_workbook_gpt_journal",
+      "status": "pass",
+      "checked_items": 323,
+      "details": "Normalized JSONL preserves every nonblank workbook row and model output"
+    },
+    {
+      "name": "llm_raw_workbook_gemini_it",
+      "status": "pass",
+      "checked_items": 315,
+      "details": "Normalized JSONL preserves every nonblank workbook row and model output"
+    },
+    {
+      "name": "llm_raw_workbook_gemini_journal",
+      "status": "pass",
+      "checked_items": 323,
+      "details": "Normalized JSONL preserves every nonblank workbook row and model output"
+    },
+    {
+      "name": "llm_raw_workbook_claude_it",
+      "status": "pass",
+      "checked_items": 315,
+      "details": "Normalized JSONL preserves every nonblank workbook row and model output"
+    },
+    {
+      "name": "llm_raw_workbook_claude_journal",
+      "status": "pass",
+      "checked_items": 323,
+      "details": "Normalized JSONL preserves every nonblank workbook row and model output"
+    },
+    {
+      "name": "fine_tuned_bart_it_all_skills",
+      "status": "pass",
+      "checked_items": 157,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bart_it_distinct_skills",
+      "status": "pass",
+      "checked_items": 42,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bart_it_hard_skills",
+      "status": "pass",
+      "checked_items": 157,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bart_it_must_have",
+      "status": "pass",
+      "checked_items": 143,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bart_it_nice_to_have",
+      "status": "pass",
+      "checked_items": 83,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bart_it_soft_skills",
+      "status": "pass",
+      "checked_items": 153,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bart_journal_all_skills",
+      "status": "pass",
+      "checked_items": 161,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bart_journal_distinct_skills",
+      "status": "pass",
+      "checked_items": 98,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bart_journal_hard_skills",
+      "status": "pass",
+      "checked_items": 161,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bart_journal_must_have",
+      "status": "pass",
+      "checked_items": 161,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bart_journal_nice_to_have",
+      "status": "pass",
+      "checked_items": 88,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bart_journal_soft_skills",
+      "status": "pass",
+      "checked_items": 142,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bart_merged_all_skills",
+      "status": "pass",
+      "checked_items": 318,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bart_merged_distinct_skills",
+      "status": "pass",
+      "checked_items": 140,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bart_merged_hard_skills",
+      "status": "pass",
+      "checked_items": 317,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bart_merged_must_have",
+      "status": "pass",
+      "checked_items": 303,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bart_merged_nice_to_have",
+      "status": "pass",
+      "checked_items": 172,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bart_merged_soft_skills",
+      "status": "pass",
+      "checked_items": 294,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bert_it_all_skills",
+      "status": "pass",
+      "checked_items": 157,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bert_it_distinct_skills",
+      "status": "pass",
+      "checked_items": 42,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bert_it_hard_skills",
+      "status": "pass",
+      "checked_items": 157,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bert_it_must_have",
+      "status": "pass",
+      "checked_items": 143,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bert_it_nice_to_have",
+      "status": "pass",
+      "checked_items": 83,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bert_it_soft_skills",
+      "status": "pass",
+      "checked_items": 153,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bert_journal_all_skills",
+      "status": "pass",
+      "checked_items": 161,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bert_journal_distinct_skills",
+      "status": "pass",
+      "checked_items": 98,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bert_journal_hard_skills",
+      "status": "pass",
+      "checked_items": 161,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bert_journal_must_have",
+      "status": "pass",
+      "checked_items": 161,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bert_journal_nice_to_have",
+      "status": "pass",
+      "checked_items": 88,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bert_journal_soft_skills",
+      "status": "pass",
+      "checked_items": 142,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bert_merged_all_skills",
+      "status": "pass",
+      "checked_items": 318,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bert_merged_distinct_skills",
+      "status": "pass",
+      "checked_items": 140,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bert_merged_hard_skills",
+      "status": "pass",
+      "checked_items": 317,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bert_merged_must_have",
+      "status": "pass",
+      "checked_items": 303,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bert_merged_nice_to_have",
+      "status": "pass",
+      "checked_items": 172,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "fine_tuned_bert_merged_soft_skills",
+      "status": "pass",
+      "checked_items": 294,
+      "details": "ZIP, canonical test IDs, gold serialization, 20 HPO trials, best score, and validation receipt agree"
+    },
+    {
+      "name": "central_per_ad_exact_containment_lexical",
+      "status": "pass",
+      "checked_items": 15450,
+      "details": "Every per-advertisement ID, gold list, match count, precision, recall, and F1 was independently recomputed"
+    },
+    {
+      "name": "raw_prediction_to_central_scorer",
+      "status": "pass",
+      "checked_items": 15450,
+      "details": "Every central raw, retained, filtered, duplicate, and unsupported prediction traces to its neural ZIP or LLM workbook row"
+    },
+    {
+      "name": "aggregate_from_per_ad",
+      "status": "pass",
+      "checked_items": 90,
+      "details": "All exact, containment, lexical, and semantic macro/micro aggregates reproduce from the per-advertisement table"
+    },
+    {
+      "name": "task_unadapted_bart_it_all_skills",
+      "status": "pass",
+      "checked_items": 157,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bart_it_distinct_skills",
+      "status": "pass",
+      "checked_items": 42,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bart_it_hard_skills",
+      "status": "pass",
+      "checked_items": 157,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bart_it_must_have",
+      "status": "pass",
+      "checked_items": 143,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bart_it_nice_to_have",
+      "status": "pass",
+      "checked_items": 83,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bart_it_soft_skills",
+      "status": "pass",
+      "checked_items": 153,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bart_journal_all_skills",
+      "status": "pass",
+      "checked_items": 161,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bart_journal_distinct_skills",
+      "status": "pass",
+      "checked_items": 98,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bart_journal_hard_skills",
+      "status": "pass",
+      "checked_items": 161,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bart_journal_must_have",
+      "status": "pass",
+      "checked_items": 161,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bart_journal_nice_to_have",
+      "status": "pass",
+      "checked_items": 88,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bart_journal_soft_skills",
+      "status": "pass",
+      "checked_items": 142,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bart_merged_all_skills",
+      "status": "pass",
+      "checked_items": 318,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bart_merged_distinct_skills",
+      "status": "pass",
+      "checked_items": 140,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bart_merged_hard_skills",
+      "status": "pass",
+      "checked_items": 317,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bart_merged_must_have",
+      "status": "pass",
+      "checked_items": 303,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bart_merged_nice_to_have",
+      "status": "pass",
+      "checked_items": 172,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bart_merged_soft_skills",
+      "status": "pass",
+      "checked_items": 294,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bert_it_all_skills",
+      "status": "pass",
+      "checked_items": 157,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bert_it_distinct_skills",
+      "status": "pass",
+      "checked_items": 42,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bert_it_hard_skills",
+      "status": "pass",
+      "checked_items": 157,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bert_it_must_have",
+      "status": "pass",
+      "checked_items": 143,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bert_it_nice_to_have",
+      "status": "pass",
+      "checked_items": 83,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bert_it_soft_skills",
+      "status": "pass",
+      "checked_items": 153,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bert_journal_all_skills",
+      "status": "pass",
+      "checked_items": 161,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bert_journal_distinct_skills",
+      "status": "pass",
+      "checked_items": 98,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bert_journal_hard_skills",
+      "status": "pass",
+      "checked_items": 161,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bert_journal_must_have",
+      "status": "pass",
+      "checked_items": 161,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bert_journal_nice_to_have",
+      "status": "pass",
+      "checked_items": 88,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bert_journal_soft_skills",
+      "status": "pass",
+      "checked_items": 142,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bert_merged_all_skills",
+      "status": "pass",
+      "checked_items": 318,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bert_merged_distinct_skills",
+      "status": "pass",
+      "checked_items": 140,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bert_merged_hard_skills",
+      "status": "pass",
+      "checked_items": 317,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bert_merged_must_have",
+      "status": "pass",
+      "checked_items": 303,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bert_merged_nice_to_have",
+      "status": "pass",
+      "checked_items": 172,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bert_merged_soft_skills",
+      "status": "pass",
+      "checked_items": 294,
+      "details": "ZIP IDs, JSON gold/predictions, frozen postprocessing, model revision, split checksum, and no-train/no-validation metadata agree"
+    },
+    {
+      "name": "task_unadapted_bert_fixed_random_head",
+      "status": "pass",
+      "checked_items": 18,
+      "details": "All BERT controls use classifier-head checksum acb23b033fa94e13f9b4032420fb571eec551a7ec0e1ca93c454aa2a7c1ab198"
+    },
+    {
+      "name": "task_unadapted_metrics",
+      "status": "pass",
+      "checked_items": 6180,
+      "details": "All baseline IDs/gold and exact-containment-lexical per-ad scores were recomputed; every macro/micro aggregate reproduces"
+    },
+    {
+      "name": "before_after_tables",
+      "status": "pass",
+      "checked_items": 36,
+      "details": "Every before, after, and delta value traces to the independently validated control and fine-tuned aggregate tables"
+    },
+    {
+      "name": "prediction_rule_external_sources",
+      "status": "pass",
+      "checked_items": 8,
+      "details": "Every downloaded Snowball/KBLab source matches its recorded SHA-256 and byte count"
+    },
+    {
+      "name": "prediction_rule_derivation",
+      "status": "pass",
+      "checked_items": 18,
+      "details": "All 18 rule files have row-level evidence, use train/validation only, and keep fragment prefixes empty"
+    }
+  ],
+  "totals": {
+    "checks": 108,
+    "checked_items": 58979
+  }
+}

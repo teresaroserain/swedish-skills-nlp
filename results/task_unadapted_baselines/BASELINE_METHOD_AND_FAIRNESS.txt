@@ -1,0 +1,18 @@
+EVALUATION PIPELINE TASK-UNADAPTED CONTROLS
+
+Purpose: isolate the effect of supervised task adaptation within BERT and BART.
+These controls are not zero-shot language understanding baselines.
+
+BERT: pretrained KBLab encoder plus one fixed-seed randomly initialized BIO head; no training.
+BART: pretrained KBLab denoising checkpoint; no task fine-tuning.
+Both: canonical seed-13 test IDs, headline+newline+description input, model-family chunking,
+the frozen evaluation pipeline prediction rules, and centralized exact-first scoring.
+No training or validation records are read by the baseline runner.
+
+Validated outputs: 36/36
+Invalid outputs: 0
+Missing outputs: 0
+Distinct BERT random-head checksums: 1
+
+Interpretation boundary: comparison with GPT/Gemini/Claude remains a comparison across
+adaptation and resource regimes, not an architecture-only fairness claim.

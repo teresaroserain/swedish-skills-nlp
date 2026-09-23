@@ -1,0 +1,926 @@
+﻿section,item,passed,evidence
+training_scripts,complete_script_set,True,actual=36 expected=36
+training_scripts,BERT_IT.py:one_seed,True,SEEDS = [13]
+training_scripts,BERT_IT.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BERT_IT.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BERT_IT.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BERT_IT.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BERT_IT.py:validation_eval_mode,True,model.eval()
+training_scripts,BERT_IT.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BERT_IT.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BERT_IT.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BERT_IT.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BERT_IT.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BERT_IT.py:seed_before_initialization,True,calls=3
+training_scripts,BERT_IT.py:bert_window,True,MAX_LEN = 512
+training_scripts,BERT_IT.py:bert_stride,True,DOC_STRIDE = 128
+training_scripts,BERT_IT.py:weighted_loss,True,class WeightedTokenTrainer(Trainer):
+training_scripts,BERT_IT.py:weight_formula,True,weights = torch.sqrt(outside_count / counts.float())
+training_scripts,BERT_IT.py:weight_cap,True,BIO_CLASS_WEIGHT_MAX = 10.0
+training_scripts,BERT_IT.py:outside_weight,True,"weights[LABEL2ID[""O""]] = 1.0"
+training_scripts,BERT_IT.py:word_boundary_expansion,True,"expand_span_to_word_boundaries(text, s, e)"
+prediction_rules,BERT_IT.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=26 generated=26
+prediction_rules,BERT_IT.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=18 generated=18
+prediction_rules,BERT_IT.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BERT_IT.py:PREDICTED_SKILL_STOPWORDS,True,embedded=285 generated=285
+training_scripts,BERT_IT_DISTINCT_SKILLS.py:one_seed,True,SEEDS = [13]
+training_scripts,BERT_IT_DISTINCT_SKILLS.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BERT_IT_DISTINCT_SKILLS.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BERT_IT_DISTINCT_SKILLS.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BERT_IT_DISTINCT_SKILLS.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BERT_IT_DISTINCT_SKILLS.py:validation_eval_mode,True,model.eval()
+training_scripts,BERT_IT_DISTINCT_SKILLS.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BERT_IT_DISTINCT_SKILLS.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BERT_IT_DISTINCT_SKILLS.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BERT_IT_DISTINCT_SKILLS.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BERT_IT_DISTINCT_SKILLS.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BERT_IT_DISTINCT_SKILLS.py:seed_before_initialization,True,calls=3
+training_scripts,BERT_IT_DISTINCT_SKILLS.py:bert_window,True,MAX_LEN = 512
+training_scripts,BERT_IT_DISTINCT_SKILLS.py:bert_stride,True,DOC_STRIDE = 128
+training_scripts,BERT_IT_DISTINCT_SKILLS.py:weighted_loss,True,class WeightedTokenTrainer(Trainer):
+training_scripts,BERT_IT_DISTINCT_SKILLS.py:weight_formula,True,weights = torch.sqrt(outside_count / counts.float())
+training_scripts,BERT_IT_DISTINCT_SKILLS.py:weight_cap,True,BIO_CLASS_WEIGHT_MAX = 10.0
+training_scripts,BERT_IT_DISTINCT_SKILLS.py:outside_weight,True,"weights[LABEL2ID[""O""]] = 1.0"
+training_scripts,BERT_IT_DISTINCT_SKILLS.py:word_boundary_expansion,True,"expand_span_to_word_boundaries(text, s, e)"
+prediction_rules,BERT_IT_DISTINCT_SKILLS.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=0 generated=0
+prediction_rules,BERT_IT_DISTINCT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=6 generated=6
+prediction_rules,BERT_IT_DISTINCT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BERT_IT_DISTINCT_SKILLS.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BERT_IT_HARD_SKILLS.py:one_seed,True,SEEDS = [13]
+training_scripts,BERT_IT_HARD_SKILLS.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BERT_IT_HARD_SKILLS.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BERT_IT_HARD_SKILLS.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BERT_IT_HARD_SKILLS.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BERT_IT_HARD_SKILLS.py:validation_eval_mode,True,model.eval()
+training_scripts,BERT_IT_HARD_SKILLS.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BERT_IT_HARD_SKILLS.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BERT_IT_HARD_SKILLS.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BERT_IT_HARD_SKILLS.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BERT_IT_HARD_SKILLS.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BERT_IT_HARD_SKILLS.py:seed_before_initialization,True,calls=3
+training_scripts,BERT_IT_HARD_SKILLS.py:bert_window,True,MAX_LEN = 512
+training_scripts,BERT_IT_HARD_SKILLS.py:bert_stride,True,DOC_STRIDE = 128
+training_scripts,BERT_IT_HARD_SKILLS.py:weighted_loss,True,class WeightedTokenTrainer(Trainer):
+training_scripts,BERT_IT_HARD_SKILLS.py:weight_formula,True,weights = torch.sqrt(outside_count / counts.float())
+training_scripts,BERT_IT_HARD_SKILLS.py:weight_cap,True,BIO_CLASS_WEIGHT_MAX = 10.0
+training_scripts,BERT_IT_HARD_SKILLS.py:outside_weight,True,"weights[LABEL2ID[""O""]] = 1.0"
+training_scripts,BERT_IT_HARD_SKILLS.py:word_boundary_expansion,True,"expand_span_to_word_boundaries(text, s, e)"
+prediction_rules,BERT_IT_HARD_SKILLS.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=23 generated=23
+prediction_rules,BERT_IT_HARD_SKILLS.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=17 generated=17
+prediction_rules,BERT_IT_HARD_SKILLS.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BERT_IT_HARD_SKILLS.py:PREDICTED_SKILL_STOPWORDS,True,embedded=285 generated=285
+training_scripts,BERT_IT_MUST_HAVE.py:one_seed,True,SEEDS = [13]
+training_scripts,BERT_IT_MUST_HAVE.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BERT_IT_MUST_HAVE.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BERT_IT_MUST_HAVE.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BERT_IT_MUST_HAVE.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BERT_IT_MUST_HAVE.py:validation_eval_mode,True,model.eval()
+training_scripts,BERT_IT_MUST_HAVE.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BERT_IT_MUST_HAVE.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BERT_IT_MUST_HAVE.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BERT_IT_MUST_HAVE.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BERT_IT_MUST_HAVE.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BERT_IT_MUST_HAVE.py:seed_before_initialization,True,calls=3
+training_scripts,BERT_IT_MUST_HAVE.py:bert_window,True,MAX_LEN = 512
+training_scripts,BERT_IT_MUST_HAVE.py:bert_stride,True,DOC_STRIDE = 128
+training_scripts,BERT_IT_MUST_HAVE.py:weighted_loss,True,class WeightedTokenTrainer(Trainer):
+training_scripts,BERT_IT_MUST_HAVE.py:weight_formula,True,weights = torch.sqrt(outside_count / counts.float())
+training_scripts,BERT_IT_MUST_HAVE.py:weight_cap,True,BIO_CLASS_WEIGHT_MAX = 10.0
+training_scripts,BERT_IT_MUST_HAVE.py:outside_weight,True,"weights[LABEL2ID[""O""]] = 1.0"
+training_scripts,BERT_IT_MUST_HAVE.py:word_boundary_expansion,True,"expand_span_to_word_boundaries(text, s, e)"
+prediction_rules,BERT_IT_MUST_HAVE.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=18 generated=18
+prediction_rules,BERT_IT_MUST_HAVE.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=14 generated=14
+prediction_rules,BERT_IT_MUST_HAVE.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BERT_IT_MUST_HAVE.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BERT_IT_NICE_TO_HAVE.py:one_seed,True,SEEDS = [13]
+training_scripts,BERT_IT_NICE_TO_HAVE.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BERT_IT_NICE_TO_HAVE.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BERT_IT_NICE_TO_HAVE.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BERT_IT_NICE_TO_HAVE.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BERT_IT_NICE_TO_HAVE.py:validation_eval_mode,True,model.eval()
+training_scripts,BERT_IT_NICE_TO_HAVE.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BERT_IT_NICE_TO_HAVE.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BERT_IT_NICE_TO_HAVE.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BERT_IT_NICE_TO_HAVE.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BERT_IT_NICE_TO_HAVE.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BERT_IT_NICE_TO_HAVE.py:seed_before_initialization,True,calls=3
+training_scripts,BERT_IT_NICE_TO_HAVE.py:bert_window,True,MAX_LEN = 512
+training_scripts,BERT_IT_NICE_TO_HAVE.py:bert_stride,True,DOC_STRIDE = 128
+training_scripts,BERT_IT_NICE_TO_HAVE.py:weighted_loss,True,class WeightedTokenTrainer(Trainer):
+training_scripts,BERT_IT_NICE_TO_HAVE.py:weight_formula,True,weights = torch.sqrt(outside_count / counts.float())
+training_scripts,BERT_IT_NICE_TO_HAVE.py:weight_cap,True,BIO_CLASS_WEIGHT_MAX = 10.0
+training_scripts,BERT_IT_NICE_TO_HAVE.py:outside_weight,True,"weights[LABEL2ID[""O""]] = 1.0"
+training_scripts,BERT_IT_NICE_TO_HAVE.py:word_boundary_expansion,True,"expand_span_to_word_boundaries(text, s, e)"
+prediction_rules,BERT_IT_NICE_TO_HAVE.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=11 generated=11
+prediction_rules,BERT_IT_NICE_TO_HAVE.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=11 generated=11
+prediction_rules,BERT_IT_NICE_TO_HAVE.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BERT_IT_NICE_TO_HAVE.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BERT_IT_SOFT_SKILLS.py:one_seed,True,SEEDS = [13]
+training_scripts,BERT_IT_SOFT_SKILLS.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BERT_IT_SOFT_SKILLS.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BERT_IT_SOFT_SKILLS.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BERT_IT_SOFT_SKILLS.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BERT_IT_SOFT_SKILLS.py:validation_eval_mode,True,model.eval()
+training_scripts,BERT_IT_SOFT_SKILLS.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BERT_IT_SOFT_SKILLS.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BERT_IT_SOFT_SKILLS.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BERT_IT_SOFT_SKILLS.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BERT_IT_SOFT_SKILLS.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BERT_IT_SOFT_SKILLS.py:seed_before_initialization,True,calls=3
+training_scripts,BERT_IT_SOFT_SKILLS.py:bert_window,True,MAX_LEN = 512
+training_scripts,BERT_IT_SOFT_SKILLS.py:bert_stride,True,DOC_STRIDE = 128
+training_scripts,BERT_IT_SOFT_SKILLS.py:weighted_loss,True,class WeightedTokenTrainer(Trainer):
+training_scripts,BERT_IT_SOFT_SKILLS.py:weight_formula,True,weights = torch.sqrt(outside_count / counts.float())
+training_scripts,BERT_IT_SOFT_SKILLS.py:weight_cap,True,BIO_CLASS_WEIGHT_MAX = 10.0
+training_scripts,BERT_IT_SOFT_SKILLS.py:outside_weight,True,"weights[LABEL2ID[""O""]] = 1.0"
+training_scripts,BERT_IT_SOFT_SKILLS.py:word_boundary_expansion,True,"expand_span_to_word_boundaries(text, s, e)"
+prediction_rules,BERT_IT_SOFT_SKILLS.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=0 generated=0
+prediction_rules,BERT_IT_SOFT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=18 generated=18
+prediction_rules,BERT_IT_SOFT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BERT_IT_SOFT_SKILLS.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BERT_JOURNAL.py:one_seed,True,SEEDS = [13]
+training_scripts,BERT_JOURNAL.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BERT_JOURNAL.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BERT_JOURNAL.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BERT_JOURNAL.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BERT_JOURNAL.py:validation_eval_mode,True,model.eval()
+training_scripts,BERT_JOURNAL.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BERT_JOURNAL.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BERT_JOURNAL.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BERT_JOURNAL.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BERT_JOURNAL.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BERT_JOURNAL.py:seed_before_initialization,True,calls=3
+training_scripts,BERT_JOURNAL.py:bert_window,True,MAX_LEN = 512
+training_scripts,BERT_JOURNAL.py:bert_stride,True,DOC_STRIDE = 128
+training_scripts,BERT_JOURNAL.py:weighted_loss,True,class WeightedTokenTrainer(Trainer):
+training_scripts,BERT_JOURNAL.py:weight_formula,True,weights = torch.sqrt(outside_count / counts.float())
+training_scripts,BERT_JOURNAL.py:weight_cap,True,BIO_CLASS_WEIGHT_MAX = 10.0
+training_scripts,BERT_JOURNAL.py:outside_weight,True,"weights[LABEL2ID[""O""]] = 1.0"
+training_scripts,BERT_JOURNAL.py:word_boundary_expansion,True,"expand_span_to_word_boundaries(text, s, e)"
+prediction_rules,BERT_JOURNAL.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=2 generated=2
+prediction_rules,BERT_JOURNAL.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=14 generated=14
+prediction_rules,BERT_JOURNAL.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BERT_JOURNAL.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BERT_JOURNAL_DISTINCT_SKILLS.py:one_seed,True,SEEDS = [13]
+training_scripts,BERT_JOURNAL_DISTINCT_SKILLS.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BERT_JOURNAL_DISTINCT_SKILLS.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BERT_JOURNAL_DISTINCT_SKILLS.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BERT_JOURNAL_DISTINCT_SKILLS.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BERT_JOURNAL_DISTINCT_SKILLS.py:validation_eval_mode,True,model.eval()
+training_scripts,BERT_JOURNAL_DISTINCT_SKILLS.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BERT_JOURNAL_DISTINCT_SKILLS.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BERT_JOURNAL_DISTINCT_SKILLS.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BERT_JOURNAL_DISTINCT_SKILLS.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BERT_JOURNAL_DISTINCT_SKILLS.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BERT_JOURNAL_DISTINCT_SKILLS.py:seed_before_initialization,True,calls=3
+training_scripts,BERT_JOURNAL_DISTINCT_SKILLS.py:bert_window,True,MAX_LEN = 512
+training_scripts,BERT_JOURNAL_DISTINCT_SKILLS.py:bert_stride,True,DOC_STRIDE = 128
+training_scripts,BERT_JOURNAL_DISTINCT_SKILLS.py:weighted_loss,True,class WeightedTokenTrainer(Trainer):
+training_scripts,BERT_JOURNAL_DISTINCT_SKILLS.py:weight_formula,True,weights = torch.sqrt(outside_count / counts.float())
+training_scripts,BERT_JOURNAL_DISTINCT_SKILLS.py:weight_cap,True,BIO_CLASS_WEIGHT_MAX = 10.0
+training_scripts,BERT_JOURNAL_DISTINCT_SKILLS.py:outside_weight,True,"weights[LABEL2ID[""O""]] = 1.0"
+training_scripts,BERT_JOURNAL_DISTINCT_SKILLS.py:word_boundary_expansion,True,"expand_span_to_word_boundaries(text, s, e)"
+prediction_rules,BERT_JOURNAL_DISTINCT_SKILLS.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=1 generated=1
+prediction_rules,BERT_JOURNAL_DISTINCT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=11 generated=11
+prediction_rules,BERT_JOURNAL_DISTINCT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BERT_JOURNAL_DISTINCT_SKILLS.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BERT_JOURNAL_HARD_SKILLS.py:one_seed,True,SEEDS = [13]
+training_scripts,BERT_JOURNAL_HARD_SKILLS.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BERT_JOURNAL_HARD_SKILLS.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BERT_JOURNAL_HARD_SKILLS.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BERT_JOURNAL_HARD_SKILLS.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BERT_JOURNAL_HARD_SKILLS.py:validation_eval_mode,True,model.eval()
+training_scripts,BERT_JOURNAL_HARD_SKILLS.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BERT_JOURNAL_HARD_SKILLS.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BERT_JOURNAL_HARD_SKILLS.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BERT_JOURNAL_HARD_SKILLS.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BERT_JOURNAL_HARD_SKILLS.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BERT_JOURNAL_HARD_SKILLS.py:seed_before_initialization,True,calls=3
+training_scripts,BERT_JOURNAL_HARD_SKILLS.py:bert_window,True,MAX_LEN = 512
+training_scripts,BERT_JOURNAL_HARD_SKILLS.py:bert_stride,True,DOC_STRIDE = 128
+training_scripts,BERT_JOURNAL_HARD_SKILLS.py:weighted_loss,True,class WeightedTokenTrainer(Trainer):
+training_scripts,BERT_JOURNAL_HARD_SKILLS.py:weight_formula,True,weights = torch.sqrt(outside_count / counts.float())
+training_scripts,BERT_JOURNAL_HARD_SKILLS.py:weight_cap,True,BIO_CLASS_WEIGHT_MAX = 10.0
+training_scripts,BERT_JOURNAL_HARD_SKILLS.py:outside_weight,True,"weights[LABEL2ID[""O""]] = 1.0"
+training_scripts,BERT_JOURNAL_HARD_SKILLS.py:word_boundary_expansion,True,"expand_span_to_word_boundaries(text, s, e)"
+prediction_rules,BERT_JOURNAL_HARD_SKILLS.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=4 generated=4
+prediction_rules,BERT_JOURNAL_HARD_SKILLS.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=14 generated=14
+prediction_rules,BERT_JOURNAL_HARD_SKILLS.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BERT_JOURNAL_HARD_SKILLS.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BERT_JOURNAL_MUST_HAVE.py:one_seed,True,SEEDS = [13]
+training_scripts,BERT_JOURNAL_MUST_HAVE.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BERT_JOURNAL_MUST_HAVE.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BERT_JOURNAL_MUST_HAVE.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BERT_JOURNAL_MUST_HAVE.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BERT_JOURNAL_MUST_HAVE.py:validation_eval_mode,True,model.eval()
+training_scripts,BERT_JOURNAL_MUST_HAVE.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BERT_JOURNAL_MUST_HAVE.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BERT_JOURNAL_MUST_HAVE.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BERT_JOURNAL_MUST_HAVE.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BERT_JOURNAL_MUST_HAVE.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BERT_JOURNAL_MUST_HAVE.py:seed_before_initialization,True,calls=3
+training_scripts,BERT_JOURNAL_MUST_HAVE.py:bert_window,True,MAX_LEN = 512
+training_scripts,BERT_JOURNAL_MUST_HAVE.py:bert_stride,True,DOC_STRIDE = 128
+training_scripts,BERT_JOURNAL_MUST_HAVE.py:weighted_loss,True,class WeightedTokenTrainer(Trainer):
+training_scripts,BERT_JOURNAL_MUST_HAVE.py:weight_formula,True,weights = torch.sqrt(outside_count / counts.float())
+training_scripts,BERT_JOURNAL_MUST_HAVE.py:weight_cap,True,BIO_CLASS_WEIGHT_MAX = 10.0
+training_scripts,BERT_JOURNAL_MUST_HAVE.py:outside_weight,True,"weights[LABEL2ID[""O""]] = 1.0"
+training_scripts,BERT_JOURNAL_MUST_HAVE.py:word_boundary_expansion,True,"expand_span_to_word_boundaries(text, s, e)"
+prediction_rules,BERT_JOURNAL_MUST_HAVE.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=1 generated=1
+prediction_rules,BERT_JOURNAL_MUST_HAVE.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=12 generated=12
+prediction_rules,BERT_JOURNAL_MUST_HAVE.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BERT_JOURNAL_MUST_HAVE.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BERT_JOURNAL_NICE_TO_HAVE.py:one_seed,True,SEEDS = [13]
+training_scripts,BERT_JOURNAL_NICE_TO_HAVE.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BERT_JOURNAL_NICE_TO_HAVE.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BERT_JOURNAL_NICE_TO_HAVE.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BERT_JOURNAL_NICE_TO_HAVE.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BERT_JOURNAL_NICE_TO_HAVE.py:validation_eval_mode,True,model.eval()
+training_scripts,BERT_JOURNAL_NICE_TO_HAVE.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BERT_JOURNAL_NICE_TO_HAVE.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BERT_JOURNAL_NICE_TO_HAVE.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BERT_JOURNAL_NICE_TO_HAVE.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BERT_JOURNAL_NICE_TO_HAVE.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BERT_JOURNAL_NICE_TO_HAVE.py:seed_before_initialization,True,calls=3
+training_scripts,BERT_JOURNAL_NICE_TO_HAVE.py:bert_window,True,MAX_LEN = 512
+training_scripts,BERT_JOURNAL_NICE_TO_HAVE.py:bert_stride,True,DOC_STRIDE = 128
+training_scripts,BERT_JOURNAL_NICE_TO_HAVE.py:weighted_loss,True,class WeightedTokenTrainer(Trainer):
+training_scripts,BERT_JOURNAL_NICE_TO_HAVE.py:weight_formula,True,weights = torch.sqrt(outside_count / counts.float())
+training_scripts,BERT_JOURNAL_NICE_TO_HAVE.py:weight_cap,True,BIO_CLASS_WEIGHT_MAX = 10.0
+training_scripts,BERT_JOURNAL_NICE_TO_HAVE.py:outside_weight,True,"weights[LABEL2ID[""O""]] = 1.0"
+training_scripts,BERT_JOURNAL_NICE_TO_HAVE.py:word_boundary_expansion,True,"expand_span_to_word_boundaries(text, s, e)"
+prediction_rules,BERT_JOURNAL_NICE_TO_HAVE.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=1 generated=1
+prediction_rules,BERT_JOURNAL_NICE_TO_HAVE.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=11 generated=11
+prediction_rules,BERT_JOURNAL_NICE_TO_HAVE.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BERT_JOURNAL_NICE_TO_HAVE.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BERT_JOURNAL_SOFT_SKILLS.py:one_seed,True,SEEDS = [13]
+training_scripts,BERT_JOURNAL_SOFT_SKILLS.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BERT_JOURNAL_SOFT_SKILLS.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BERT_JOURNAL_SOFT_SKILLS.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BERT_JOURNAL_SOFT_SKILLS.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BERT_JOURNAL_SOFT_SKILLS.py:validation_eval_mode,True,model.eval()
+training_scripts,BERT_JOURNAL_SOFT_SKILLS.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BERT_JOURNAL_SOFT_SKILLS.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BERT_JOURNAL_SOFT_SKILLS.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BERT_JOURNAL_SOFT_SKILLS.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BERT_JOURNAL_SOFT_SKILLS.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BERT_JOURNAL_SOFT_SKILLS.py:seed_before_initialization,True,calls=3
+training_scripts,BERT_JOURNAL_SOFT_SKILLS.py:bert_window,True,MAX_LEN = 512
+training_scripts,BERT_JOURNAL_SOFT_SKILLS.py:bert_stride,True,DOC_STRIDE = 128
+training_scripts,BERT_JOURNAL_SOFT_SKILLS.py:weighted_loss,True,class WeightedTokenTrainer(Trainer):
+training_scripts,BERT_JOURNAL_SOFT_SKILLS.py:weight_formula,True,weights = torch.sqrt(outside_count / counts.float())
+training_scripts,BERT_JOURNAL_SOFT_SKILLS.py:weight_cap,True,BIO_CLASS_WEIGHT_MAX = 10.0
+training_scripts,BERT_JOURNAL_SOFT_SKILLS.py:outside_weight,True,"weights[LABEL2ID[""O""]] = 1.0"
+training_scripts,BERT_JOURNAL_SOFT_SKILLS.py:word_boundary_expansion,True,"expand_span_to_word_boundaries(text, s, e)"
+prediction_rules,BERT_JOURNAL_SOFT_SKILLS.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=0 generated=0
+prediction_rules,BERT_JOURNAL_SOFT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=14 generated=14
+prediction_rules,BERT_JOURNAL_SOFT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BERT_JOURNAL_SOFT_SKILLS.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BERT_MERGED.py:one_seed,True,SEEDS = [13]
+training_scripts,BERT_MERGED.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BERT_MERGED.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BERT_MERGED.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BERT_MERGED.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BERT_MERGED.py:validation_eval_mode,True,model.eval()
+training_scripts,BERT_MERGED.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BERT_MERGED.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BERT_MERGED.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BERT_MERGED.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BERT_MERGED.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BERT_MERGED.py:seed_before_initialization,True,calls=3
+training_scripts,BERT_MERGED.py:bert_window,True,MAX_LEN = 512
+training_scripts,BERT_MERGED.py:bert_stride,True,DOC_STRIDE = 128
+training_scripts,BERT_MERGED.py:weighted_loss,True,class WeightedTokenTrainer(Trainer):
+training_scripts,BERT_MERGED.py:weight_formula,True,weights = torch.sqrt(outside_count / counts.float())
+training_scripts,BERT_MERGED.py:weight_cap,True,BIO_CLASS_WEIGHT_MAX = 10.0
+training_scripts,BERT_MERGED.py:outside_weight,True,"weights[LABEL2ID[""O""]] = 1.0"
+training_scripts,BERT_MERGED.py:word_boundary_expansion,True,"expand_span_to_word_boundaries(text, s, e)"
+prediction_rules,BERT_MERGED.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=26 generated=26
+prediction_rules,BERT_MERGED.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=21 generated=21
+prediction_rules,BERT_MERGED.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BERT_MERGED.py:PREDICTED_SKILL_STOPWORDS,True,embedded=285 generated=285
+training_scripts,BERT_MERGED_DISTINCT_SKILLS.py:one_seed,True,SEEDS = [13]
+training_scripts,BERT_MERGED_DISTINCT_SKILLS.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BERT_MERGED_DISTINCT_SKILLS.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BERT_MERGED_DISTINCT_SKILLS.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BERT_MERGED_DISTINCT_SKILLS.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BERT_MERGED_DISTINCT_SKILLS.py:validation_eval_mode,True,model.eval()
+training_scripts,BERT_MERGED_DISTINCT_SKILLS.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BERT_MERGED_DISTINCT_SKILLS.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BERT_MERGED_DISTINCT_SKILLS.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BERT_MERGED_DISTINCT_SKILLS.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BERT_MERGED_DISTINCT_SKILLS.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BERT_MERGED_DISTINCT_SKILLS.py:seed_before_initialization,True,calls=3
+training_scripts,BERT_MERGED_DISTINCT_SKILLS.py:bert_window,True,MAX_LEN = 512
+training_scripts,BERT_MERGED_DISTINCT_SKILLS.py:bert_stride,True,DOC_STRIDE = 128
+training_scripts,BERT_MERGED_DISTINCT_SKILLS.py:weighted_loss,True,class WeightedTokenTrainer(Trainer):
+training_scripts,BERT_MERGED_DISTINCT_SKILLS.py:weight_formula,True,weights = torch.sqrt(outside_count / counts.float())
+training_scripts,BERT_MERGED_DISTINCT_SKILLS.py:weight_cap,True,BIO_CLASS_WEIGHT_MAX = 10.0
+training_scripts,BERT_MERGED_DISTINCT_SKILLS.py:outside_weight,True,"weights[LABEL2ID[""O""]] = 1.0"
+training_scripts,BERT_MERGED_DISTINCT_SKILLS.py:word_boundary_expansion,True,"expand_span_to_word_boundaries(text, s, e)"
+prediction_rules,BERT_MERGED_DISTINCT_SKILLS.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=1 generated=1
+prediction_rules,BERT_MERGED_DISTINCT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=13 generated=13
+prediction_rules,BERT_MERGED_DISTINCT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BERT_MERGED_DISTINCT_SKILLS.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BERT_MERGED_HARD_SKILLS.py:one_seed,True,SEEDS = [13]
+training_scripts,BERT_MERGED_HARD_SKILLS.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BERT_MERGED_HARD_SKILLS.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BERT_MERGED_HARD_SKILLS.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BERT_MERGED_HARD_SKILLS.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BERT_MERGED_HARD_SKILLS.py:validation_eval_mode,True,model.eval()
+training_scripts,BERT_MERGED_HARD_SKILLS.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BERT_MERGED_HARD_SKILLS.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BERT_MERGED_HARD_SKILLS.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BERT_MERGED_HARD_SKILLS.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BERT_MERGED_HARD_SKILLS.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BERT_MERGED_HARD_SKILLS.py:seed_before_initialization,True,calls=3
+training_scripts,BERT_MERGED_HARD_SKILLS.py:bert_window,True,MAX_LEN = 512
+training_scripts,BERT_MERGED_HARD_SKILLS.py:bert_stride,True,DOC_STRIDE = 128
+training_scripts,BERT_MERGED_HARD_SKILLS.py:weighted_loss,True,class WeightedTokenTrainer(Trainer):
+training_scripts,BERT_MERGED_HARD_SKILLS.py:weight_formula,True,weights = torch.sqrt(outside_count / counts.float())
+training_scripts,BERT_MERGED_HARD_SKILLS.py:weight_cap,True,BIO_CLASS_WEIGHT_MAX = 10.0
+training_scripts,BERT_MERGED_HARD_SKILLS.py:outside_weight,True,"weights[LABEL2ID[""O""]] = 1.0"
+training_scripts,BERT_MERGED_HARD_SKILLS.py:word_boundary_expansion,True,"expand_span_to_word_boundaries(text, s, e)"
+prediction_rules,BERT_MERGED_HARD_SKILLS.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=27 generated=27
+prediction_rules,BERT_MERGED_HARD_SKILLS.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=19 generated=19
+prediction_rules,BERT_MERGED_HARD_SKILLS.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BERT_MERGED_HARD_SKILLS.py:PREDICTED_SKILL_STOPWORDS,True,embedded=285 generated=285
+training_scripts,BERT_MERGED_MUST_HAVE.py:one_seed,True,SEEDS = [13]
+training_scripts,BERT_MERGED_MUST_HAVE.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BERT_MERGED_MUST_HAVE.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BERT_MERGED_MUST_HAVE.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BERT_MERGED_MUST_HAVE.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BERT_MERGED_MUST_HAVE.py:validation_eval_mode,True,model.eval()
+training_scripts,BERT_MERGED_MUST_HAVE.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BERT_MERGED_MUST_HAVE.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BERT_MERGED_MUST_HAVE.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BERT_MERGED_MUST_HAVE.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BERT_MERGED_MUST_HAVE.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BERT_MERGED_MUST_HAVE.py:seed_before_initialization,True,calls=3
+training_scripts,BERT_MERGED_MUST_HAVE.py:bert_window,True,MAX_LEN = 512
+training_scripts,BERT_MERGED_MUST_HAVE.py:bert_stride,True,DOC_STRIDE = 128
+training_scripts,BERT_MERGED_MUST_HAVE.py:weighted_loss,True,class WeightedTokenTrainer(Trainer):
+training_scripts,BERT_MERGED_MUST_HAVE.py:weight_formula,True,weights = torch.sqrt(outside_count / counts.float())
+training_scripts,BERT_MERGED_MUST_HAVE.py:weight_cap,True,BIO_CLASS_WEIGHT_MAX = 10.0
+training_scripts,BERT_MERGED_MUST_HAVE.py:outside_weight,True,"weights[LABEL2ID[""O""]] = 1.0"
+training_scripts,BERT_MERGED_MUST_HAVE.py:word_boundary_expansion,True,"expand_span_to_word_boundaries(text, s, e)"
+prediction_rules,BERT_MERGED_MUST_HAVE.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=17 generated=17
+prediction_rules,BERT_MERGED_MUST_HAVE.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=18 generated=18
+prediction_rules,BERT_MERGED_MUST_HAVE.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BERT_MERGED_MUST_HAVE.py:PREDICTED_SKILL_STOPWORDS,True,embedded=285 generated=285
+training_scripts,BERT_MERGED_NICE_TO_HAVE.py:one_seed,True,SEEDS = [13]
+training_scripts,BERT_MERGED_NICE_TO_HAVE.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BERT_MERGED_NICE_TO_HAVE.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BERT_MERGED_NICE_TO_HAVE.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BERT_MERGED_NICE_TO_HAVE.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BERT_MERGED_NICE_TO_HAVE.py:validation_eval_mode,True,model.eval()
+training_scripts,BERT_MERGED_NICE_TO_HAVE.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BERT_MERGED_NICE_TO_HAVE.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BERT_MERGED_NICE_TO_HAVE.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BERT_MERGED_NICE_TO_HAVE.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BERT_MERGED_NICE_TO_HAVE.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BERT_MERGED_NICE_TO_HAVE.py:seed_before_initialization,True,calls=3
+training_scripts,BERT_MERGED_NICE_TO_HAVE.py:bert_window,True,MAX_LEN = 512
+training_scripts,BERT_MERGED_NICE_TO_HAVE.py:bert_stride,True,DOC_STRIDE = 128
+training_scripts,BERT_MERGED_NICE_TO_HAVE.py:weighted_loss,True,class WeightedTokenTrainer(Trainer):
+training_scripts,BERT_MERGED_NICE_TO_HAVE.py:weight_formula,True,weights = torch.sqrt(outside_count / counts.float())
+training_scripts,BERT_MERGED_NICE_TO_HAVE.py:weight_cap,True,BIO_CLASS_WEIGHT_MAX = 10.0
+training_scripts,BERT_MERGED_NICE_TO_HAVE.py:outside_weight,True,"weights[LABEL2ID[""O""]] = 1.0"
+training_scripts,BERT_MERGED_NICE_TO_HAVE.py:word_boundary_expansion,True,"expand_span_to_word_boundaries(text, s, e)"
+prediction_rules,BERT_MERGED_NICE_TO_HAVE.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=11 generated=11
+prediction_rules,BERT_MERGED_NICE_TO_HAVE.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=16 generated=16
+prediction_rules,BERT_MERGED_NICE_TO_HAVE.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BERT_MERGED_NICE_TO_HAVE.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BERT_MERGED_SOFT_SKILLS.py:one_seed,True,SEEDS = [13]
+training_scripts,BERT_MERGED_SOFT_SKILLS.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BERT_MERGED_SOFT_SKILLS.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BERT_MERGED_SOFT_SKILLS.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BERT_MERGED_SOFT_SKILLS.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BERT_MERGED_SOFT_SKILLS.py:validation_eval_mode,True,model.eval()
+training_scripts,BERT_MERGED_SOFT_SKILLS.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BERT_MERGED_SOFT_SKILLS.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BERT_MERGED_SOFT_SKILLS.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BERT_MERGED_SOFT_SKILLS.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BERT_MERGED_SOFT_SKILLS.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BERT_MERGED_SOFT_SKILLS.py:seed_before_initialization,True,calls=3
+training_scripts,BERT_MERGED_SOFT_SKILLS.py:bert_window,True,MAX_LEN = 512
+training_scripts,BERT_MERGED_SOFT_SKILLS.py:bert_stride,True,DOC_STRIDE = 128
+training_scripts,BERT_MERGED_SOFT_SKILLS.py:weighted_loss,True,class WeightedTokenTrainer(Trainer):
+training_scripts,BERT_MERGED_SOFT_SKILLS.py:weight_formula,True,weights = torch.sqrt(outside_count / counts.float())
+training_scripts,BERT_MERGED_SOFT_SKILLS.py:weight_cap,True,BIO_CLASS_WEIGHT_MAX = 10.0
+training_scripts,BERT_MERGED_SOFT_SKILLS.py:outside_weight,True,"weights[LABEL2ID[""O""]] = 1.0"
+training_scripts,BERT_MERGED_SOFT_SKILLS.py:word_boundary_expansion,True,"expand_span_to_word_boundaries(text, s, e)"
+prediction_rules,BERT_MERGED_SOFT_SKILLS.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=0 generated=0
+prediction_rules,BERT_MERGED_SOFT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=19 generated=19
+prediction_rules,BERT_MERGED_SOFT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BERT_MERGED_SOFT_SKILLS.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BART_IT.py:one_seed,True,SEEDS = [13]
+training_scripts,BART_IT.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BART_IT.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BART_IT.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BART_IT.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BART_IT.py:validation_eval_mode,True,model.eval()
+training_scripts,BART_IT.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BART_IT.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BART_IT.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BART_IT.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BART_IT.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BART_IT.py:seed_before_initialization,True,calls=3
+training_scripts,BART_IT.py:source_limit,True,MAX_SOURCE_LEN = 1024
+training_scripts,BART_IT.py:chunk_limit,True,CHUNK_MAX_TOKENS = 1000
+training_scripts,BART_IT.py:chunk_overlap,True,CHUNK_OVERLAP = 160
+training_scripts,BART_IT.py:target_limit,True,MAX_TARGET_LEN = 512
+training_scripts,BART_IT.py:generation_limit,True,GEN_MAX_NEW_TOKENS = 512
+training_scripts,BART_IT.py:hpo_beams,True,HPO_NUM_BEAMS = 2
+training_scripts,BART_IT.py:final_beams,True,GEN_NUM_BEAMS = 6
+training_scripts,BART_IT.py:no_repeat_ngram,True,GEN_NO_REPEAT_NGRAM = 3
+training_scripts,BART_IT.py:source_visible_targets,True,def assign_skills_to_chunks(
+prediction_rules,BART_IT.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=26 generated=26
+prediction_rules,BART_IT.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=18 generated=18
+prediction_rules,BART_IT.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BART_IT.py:PREDICTED_SKILL_STOPWORDS,True,embedded=285 generated=285
+training_scripts,BART_IT_DISTINCT_SKILLS.py:one_seed,True,SEEDS = [13]
+training_scripts,BART_IT_DISTINCT_SKILLS.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BART_IT_DISTINCT_SKILLS.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BART_IT_DISTINCT_SKILLS.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BART_IT_DISTINCT_SKILLS.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BART_IT_DISTINCT_SKILLS.py:validation_eval_mode,True,model.eval()
+training_scripts,BART_IT_DISTINCT_SKILLS.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BART_IT_DISTINCT_SKILLS.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BART_IT_DISTINCT_SKILLS.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BART_IT_DISTINCT_SKILLS.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BART_IT_DISTINCT_SKILLS.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BART_IT_DISTINCT_SKILLS.py:seed_before_initialization,True,calls=3
+training_scripts,BART_IT_DISTINCT_SKILLS.py:source_limit,True,MAX_SOURCE_LEN = 1024
+training_scripts,BART_IT_DISTINCT_SKILLS.py:chunk_limit,True,CHUNK_MAX_TOKENS = 1000
+training_scripts,BART_IT_DISTINCT_SKILLS.py:chunk_overlap,True,CHUNK_OVERLAP = 160
+training_scripts,BART_IT_DISTINCT_SKILLS.py:target_limit,True,MAX_TARGET_LEN = 512
+training_scripts,BART_IT_DISTINCT_SKILLS.py:generation_limit,True,GEN_MAX_NEW_TOKENS = 512
+training_scripts,BART_IT_DISTINCT_SKILLS.py:hpo_beams,True,HPO_NUM_BEAMS = 2
+training_scripts,BART_IT_DISTINCT_SKILLS.py:final_beams,True,GEN_NUM_BEAMS = 6
+training_scripts,BART_IT_DISTINCT_SKILLS.py:no_repeat_ngram,True,GEN_NO_REPEAT_NGRAM = 3
+training_scripts,BART_IT_DISTINCT_SKILLS.py:source_visible_targets,True,def assign_skills_to_chunks(
+prediction_rules,BART_IT_DISTINCT_SKILLS.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=0 generated=0
+prediction_rules,BART_IT_DISTINCT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=6 generated=6
+prediction_rules,BART_IT_DISTINCT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BART_IT_DISTINCT_SKILLS.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BART_IT_HARD_SKILLS.py:one_seed,True,SEEDS = [13]
+training_scripts,BART_IT_HARD_SKILLS.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BART_IT_HARD_SKILLS.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BART_IT_HARD_SKILLS.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BART_IT_HARD_SKILLS.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BART_IT_HARD_SKILLS.py:validation_eval_mode,True,model.eval()
+training_scripts,BART_IT_HARD_SKILLS.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BART_IT_HARD_SKILLS.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BART_IT_HARD_SKILLS.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BART_IT_HARD_SKILLS.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BART_IT_HARD_SKILLS.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BART_IT_HARD_SKILLS.py:seed_before_initialization,True,calls=3
+training_scripts,BART_IT_HARD_SKILLS.py:source_limit,True,MAX_SOURCE_LEN = 1024
+training_scripts,BART_IT_HARD_SKILLS.py:chunk_limit,True,CHUNK_MAX_TOKENS = 1000
+training_scripts,BART_IT_HARD_SKILLS.py:chunk_overlap,True,CHUNK_OVERLAP = 160
+training_scripts,BART_IT_HARD_SKILLS.py:target_limit,True,MAX_TARGET_LEN = 512
+training_scripts,BART_IT_HARD_SKILLS.py:generation_limit,True,GEN_MAX_NEW_TOKENS = 512
+training_scripts,BART_IT_HARD_SKILLS.py:hpo_beams,True,HPO_NUM_BEAMS = 2
+training_scripts,BART_IT_HARD_SKILLS.py:final_beams,True,GEN_NUM_BEAMS = 6
+training_scripts,BART_IT_HARD_SKILLS.py:no_repeat_ngram,True,GEN_NO_REPEAT_NGRAM = 3
+training_scripts,BART_IT_HARD_SKILLS.py:source_visible_targets,True,def assign_skills_to_chunks(
+prediction_rules,BART_IT_HARD_SKILLS.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=23 generated=23
+prediction_rules,BART_IT_HARD_SKILLS.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=17 generated=17
+prediction_rules,BART_IT_HARD_SKILLS.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BART_IT_HARD_SKILLS.py:PREDICTED_SKILL_STOPWORDS,True,embedded=285 generated=285
+training_scripts,BART_IT_MUST_HAVE.py:one_seed,True,SEEDS = [13]
+training_scripts,BART_IT_MUST_HAVE.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BART_IT_MUST_HAVE.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BART_IT_MUST_HAVE.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BART_IT_MUST_HAVE.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BART_IT_MUST_HAVE.py:validation_eval_mode,True,model.eval()
+training_scripts,BART_IT_MUST_HAVE.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BART_IT_MUST_HAVE.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BART_IT_MUST_HAVE.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BART_IT_MUST_HAVE.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BART_IT_MUST_HAVE.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BART_IT_MUST_HAVE.py:seed_before_initialization,True,calls=3
+training_scripts,BART_IT_MUST_HAVE.py:source_limit,True,MAX_SOURCE_LEN = 1024
+training_scripts,BART_IT_MUST_HAVE.py:chunk_limit,True,CHUNK_MAX_TOKENS = 1000
+training_scripts,BART_IT_MUST_HAVE.py:chunk_overlap,True,CHUNK_OVERLAP = 160
+training_scripts,BART_IT_MUST_HAVE.py:target_limit,True,MAX_TARGET_LEN = 512
+training_scripts,BART_IT_MUST_HAVE.py:generation_limit,True,GEN_MAX_NEW_TOKENS = 512
+training_scripts,BART_IT_MUST_HAVE.py:hpo_beams,True,HPO_NUM_BEAMS = 2
+training_scripts,BART_IT_MUST_HAVE.py:final_beams,True,GEN_NUM_BEAMS = 6
+training_scripts,BART_IT_MUST_HAVE.py:no_repeat_ngram,True,GEN_NO_REPEAT_NGRAM = 3
+training_scripts,BART_IT_MUST_HAVE.py:source_visible_targets,True,def assign_skills_to_chunks(
+prediction_rules,BART_IT_MUST_HAVE.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=18 generated=18
+prediction_rules,BART_IT_MUST_HAVE.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=14 generated=14
+prediction_rules,BART_IT_MUST_HAVE.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BART_IT_MUST_HAVE.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BART_IT_NICE_TO_HAVE.py:one_seed,True,SEEDS = [13]
+training_scripts,BART_IT_NICE_TO_HAVE.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BART_IT_NICE_TO_HAVE.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BART_IT_NICE_TO_HAVE.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BART_IT_NICE_TO_HAVE.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BART_IT_NICE_TO_HAVE.py:validation_eval_mode,True,model.eval()
+training_scripts,BART_IT_NICE_TO_HAVE.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BART_IT_NICE_TO_HAVE.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BART_IT_NICE_TO_HAVE.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BART_IT_NICE_TO_HAVE.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BART_IT_NICE_TO_HAVE.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BART_IT_NICE_TO_HAVE.py:seed_before_initialization,True,calls=3
+training_scripts,BART_IT_NICE_TO_HAVE.py:source_limit,True,MAX_SOURCE_LEN = 1024
+training_scripts,BART_IT_NICE_TO_HAVE.py:chunk_limit,True,CHUNK_MAX_TOKENS = 1000
+training_scripts,BART_IT_NICE_TO_HAVE.py:chunk_overlap,True,CHUNK_OVERLAP = 160
+training_scripts,BART_IT_NICE_TO_HAVE.py:target_limit,True,MAX_TARGET_LEN = 512
+training_scripts,BART_IT_NICE_TO_HAVE.py:generation_limit,True,GEN_MAX_NEW_TOKENS = 512
+training_scripts,BART_IT_NICE_TO_HAVE.py:hpo_beams,True,HPO_NUM_BEAMS = 2
+training_scripts,BART_IT_NICE_TO_HAVE.py:final_beams,True,GEN_NUM_BEAMS = 6
+training_scripts,BART_IT_NICE_TO_HAVE.py:no_repeat_ngram,True,GEN_NO_REPEAT_NGRAM = 3
+training_scripts,BART_IT_NICE_TO_HAVE.py:source_visible_targets,True,def assign_skills_to_chunks(
+prediction_rules,BART_IT_NICE_TO_HAVE.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=11 generated=11
+prediction_rules,BART_IT_NICE_TO_HAVE.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=11 generated=11
+prediction_rules,BART_IT_NICE_TO_HAVE.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BART_IT_NICE_TO_HAVE.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BART_IT_SOFT_SKILLS.py:one_seed,True,SEEDS = [13]
+training_scripts,BART_IT_SOFT_SKILLS.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BART_IT_SOFT_SKILLS.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BART_IT_SOFT_SKILLS.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BART_IT_SOFT_SKILLS.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BART_IT_SOFT_SKILLS.py:validation_eval_mode,True,model.eval()
+training_scripts,BART_IT_SOFT_SKILLS.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BART_IT_SOFT_SKILLS.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BART_IT_SOFT_SKILLS.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BART_IT_SOFT_SKILLS.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BART_IT_SOFT_SKILLS.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BART_IT_SOFT_SKILLS.py:seed_before_initialization,True,calls=3
+training_scripts,BART_IT_SOFT_SKILLS.py:source_limit,True,MAX_SOURCE_LEN = 1024
+training_scripts,BART_IT_SOFT_SKILLS.py:chunk_limit,True,CHUNK_MAX_TOKENS = 1000
+training_scripts,BART_IT_SOFT_SKILLS.py:chunk_overlap,True,CHUNK_OVERLAP = 160
+training_scripts,BART_IT_SOFT_SKILLS.py:target_limit,True,MAX_TARGET_LEN = 512
+training_scripts,BART_IT_SOFT_SKILLS.py:generation_limit,True,GEN_MAX_NEW_TOKENS = 512
+training_scripts,BART_IT_SOFT_SKILLS.py:hpo_beams,True,HPO_NUM_BEAMS = 2
+training_scripts,BART_IT_SOFT_SKILLS.py:final_beams,True,GEN_NUM_BEAMS = 6
+training_scripts,BART_IT_SOFT_SKILLS.py:no_repeat_ngram,True,GEN_NO_REPEAT_NGRAM = 3
+training_scripts,BART_IT_SOFT_SKILLS.py:source_visible_targets,True,def assign_skills_to_chunks(
+prediction_rules,BART_IT_SOFT_SKILLS.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=0 generated=0
+prediction_rules,BART_IT_SOFT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=18 generated=18
+prediction_rules,BART_IT_SOFT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BART_IT_SOFT_SKILLS.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BART_JOURNAL.py:one_seed,True,SEEDS = [13]
+training_scripts,BART_JOURNAL.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BART_JOURNAL.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BART_JOURNAL.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BART_JOURNAL.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BART_JOURNAL.py:validation_eval_mode,True,model.eval()
+training_scripts,BART_JOURNAL.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BART_JOURNAL.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BART_JOURNAL.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BART_JOURNAL.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BART_JOURNAL.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BART_JOURNAL.py:seed_before_initialization,True,calls=3
+training_scripts,BART_JOURNAL.py:source_limit,True,MAX_SOURCE_LEN = 1024
+training_scripts,BART_JOURNAL.py:chunk_limit,True,CHUNK_MAX_TOKENS = 1000
+training_scripts,BART_JOURNAL.py:chunk_overlap,True,CHUNK_OVERLAP = 160
+training_scripts,BART_JOURNAL.py:target_limit,True,MAX_TARGET_LEN = 512
+training_scripts,BART_JOURNAL.py:generation_limit,True,GEN_MAX_NEW_TOKENS = 512
+training_scripts,BART_JOURNAL.py:hpo_beams,True,HPO_NUM_BEAMS = 2
+training_scripts,BART_JOURNAL.py:final_beams,True,GEN_NUM_BEAMS = 6
+training_scripts,BART_JOURNAL.py:no_repeat_ngram,True,GEN_NO_REPEAT_NGRAM = 3
+training_scripts,BART_JOURNAL.py:source_visible_targets,True,def assign_skills_to_chunks(
+prediction_rules,BART_JOURNAL.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=2 generated=2
+prediction_rules,BART_JOURNAL.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=14 generated=14
+prediction_rules,BART_JOURNAL.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BART_JOURNAL.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BART_JOURNAL_DISTINCT_SKILLS.py:one_seed,True,SEEDS = [13]
+training_scripts,BART_JOURNAL_DISTINCT_SKILLS.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BART_JOURNAL_DISTINCT_SKILLS.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BART_JOURNAL_DISTINCT_SKILLS.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BART_JOURNAL_DISTINCT_SKILLS.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BART_JOURNAL_DISTINCT_SKILLS.py:validation_eval_mode,True,model.eval()
+training_scripts,BART_JOURNAL_DISTINCT_SKILLS.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BART_JOURNAL_DISTINCT_SKILLS.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BART_JOURNAL_DISTINCT_SKILLS.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BART_JOURNAL_DISTINCT_SKILLS.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BART_JOURNAL_DISTINCT_SKILLS.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BART_JOURNAL_DISTINCT_SKILLS.py:seed_before_initialization,True,calls=3
+training_scripts,BART_JOURNAL_DISTINCT_SKILLS.py:source_limit,True,MAX_SOURCE_LEN = 1024
+training_scripts,BART_JOURNAL_DISTINCT_SKILLS.py:chunk_limit,True,CHUNK_MAX_TOKENS = 1000
+training_scripts,BART_JOURNAL_DISTINCT_SKILLS.py:chunk_overlap,True,CHUNK_OVERLAP = 160
+training_scripts,BART_JOURNAL_DISTINCT_SKILLS.py:target_limit,True,MAX_TARGET_LEN = 512
+training_scripts,BART_JOURNAL_DISTINCT_SKILLS.py:generation_limit,True,GEN_MAX_NEW_TOKENS = 512
+training_scripts,BART_JOURNAL_DISTINCT_SKILLS.py:hpo_beams,True,HPO_NUM_BEAMS = 2
+training_scripts,BART_JOURNAL_DISTINCT_SKILLS.py:final_beams,True,GEN_NUM_BEAMS = 6
+training_scripts,BART_JOURNAL_DISTINCT_SKILLS.py:no_repeat_ngram,True,GEN_NO_REPEAT_NGRAM = 3
+training_scripts,BART_JOURNAL_DISTINCT_SKILLS.py:source_visible_targets,True,def assign_skills_to_chunks(
+prediction_rules,BART_JOURNAL_DISTINCT_SKILLS.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=1 generated=1
+prediction_rules,BART_JOURNAL_DISTINCT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=11 generated=11
+prediction_rules,BART_JOURNAL_DISTINCT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BART_JOURNAL_DISTINCT_SKILLS.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BART_JOURNAL_HARD_SKILLS.py:one_seed,True,SEEDS = [13]
+training_scripts,BART_JOURNAL_HARD_SKILLS.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BART_JOURNAL_HARD_SKILLS.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BART_JOURNAL_HARD_SKILLS.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BART_JOURNAL_HARD_SKILLS.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BART_JOURNAL_HARD_SKILLS.py:validation_eval_mode,True,model.eval()
+training_scripts,BART_JOURNAL_HARD_SKILLS.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BART_JOURNAL_HARD_SKILLS.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BART_JOURNAL_HARD_SKILLS.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BART_JOURNAL_HARD_SKILLS.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BART_JOURNAL_HARD_SKILLS.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BART_JOURNAL_HARD_SKILLS.py:seed_before_initialization,True,calls=3
+training_scripts,BART_JOURNAL_HARD_SKILLS.py:source_limit,True,MAX_SOURCE_LEN = 1024
+training_scripts,BART_JOURNAL_HARD_SKILLS.py:chunk_limit,True,CHUNK_MAX_TOKENS = 1000
+training_scripts,BART_JOURNAL_HARD_SKILLS.py:chunk_overlap,True,CHUNK_OVERLAP = 160
+training_scripts,BART_JOURNAL_HARD_SKILLS.py:target_limit,True,MAX_TARGET_LEN = 512
+training_scripts,BART_JOURNAL_HARD_SKILLS.py:generation_limit,True,GEN_MAX_NEW_TOKENS = 512
+training_scripts,BART_JOURNAL_HARD_SKILLS.py:hpo_beams,True,HPO_NUM_BEAMS = 2
+training_scripts,BART_JOURNAL_HARD_SKILLS.py:final_beams,True,GEN_NUM_BEAMS = 6
+training_scripts,BART_JOURNAL_HARD_SKILLS.py:no_repeat_ngram,True,GEN_NO_REPEAT_NGRAM = 3
+training_scripts,BART_JOURNAL_HARD_SKILLS.py:source_visible_targets,True,def assign_skills_to_chunks(
+prediction_rules,BART_JOURNAL_HARD_SKILLS.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=4 generated=4
+prediction_rules,BART_JOURNAL_HARD_SKILLS.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=14 generated=14
+prediction_rules,BART_JOURNAL_HARD_SKILLS.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BART_JOURNAL_HARD_SKILLS.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BART_JOURNAL_MUST_HAVE.py:one_seed,True,SEEDS = [13]
+training_scripts,BART_JOURNAL_MUST_HAVE.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BART_JOURNAL_MUST_HAVE.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BART_JOURNAL_MUST_HAVE.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BART_JOURNAL_MUST_HAVE.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BART_JOURNAL_MUST_HAVE.py:validation_eval_mode,True,model.eval()
+training_scripts,BART_JOURNAL_MUST_HAVE.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BART_JOURNAL_MUST_HAVE.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BART_JOURNAL_MUST_HAVE.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BART_JOURNAL_MUST_HAVE.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BART_JOURNAL_MUST_HAVE.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BART_JOURNAL_MUST_HAVE.py:seed_before_initialization,True,calls=3
+training_scripts,BART_JOURNAL_MUST_HAVE.py:source_limit,True,MAX_SOURCE_LEN = 1024
+training_scripts,BART_JOURNAL_MUST_HAVE.py:chunk_limit,True,CHUNK_MAX_TOKENS = 1000
+training_scripts,BART_JOURNAL_MUST_HAVE.py:chunk_overlap,True,CHUNK_OVERLAP = 160
+training_scripts,BART_JOURNAL_MUST_HAVE.py:target_limit,True,MAX_TARGET_LEN = 512
+training_scripts,BART_JOURNAL_MUST_HAVE.py:generation_limit,True,GEN_MAX_NEW_TOKENS = 512
+training_scripts,BART_JOURNAL_MUST_HAVE.py:hpo_beams,True,HPO_NUM_BEAMS = 2
+training_scripts,BART_JOURNAL_MUST_HAVE.py:final_beams,True,GEN_NUM_BEAMS = 6
+training_scripts,BART_JOURNAL_MUST_HAVE.py:no_repeat_ngram,True,GEN_NO_REPEAT_NGRAM = 3
+training_scripts,BART_JOURNAL_MUST_HAVE.py:source_visible_targets,True,def assign_skills_to_chunks(
+prediction_rules,BART_JOURNAL_MUST_HAVE.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=1 generated=1
+prediction_rules,BART_JOURNAL_MUST_HAVE.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=12 generated=12
+prediction_rules,BART_JOURNAL_MUST_HAVE.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BART_JOURNAL_MUST_HAVE.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BART_JOURNAL_NICE_TO_HAVE.py:one_seed,True,SEEDS = [13]
+training_scripts,BART_JOURNAL_NICE_TO_HAVE.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BART_JOURNAL_NICE_TO_HAVE.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BART_JOURNAL_NICE_TO_HAVE.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BART_JOURNAL_NICE_TO_HAVE.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BART_JOURNAL_NICE_TO_HAVE.py:validation_eval_mode,True,model.eval()
+training_scripts,BART_JOURNAL_NICE_TO_HAVE.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BART_JOURNAL_NICE_TO_HAVE.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BART_JOURNAL_NICE_TO_HAVE.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BART_JOURNAL_NICE_TO_HAVE.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BART_JOURNAL_NICE_TO_HAVE.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BART_JOURNAL_NICE_TO_HAVE.py:seed_before_initialization,True,calls=3
+training_scripts,BART_JOURNAL_NICE_TO_HAVE.py:source_limit,True,MAX_SOURCE_LEN = 1024
+training_scripts,BART_JOURNAL_NICE_TO_HAVE.py:chunk_limit,True,CHUNK_MAX_TOKENS = 1000
+training_scripts,BART_JOURNAL_NICE_TO_HAVE.py:chunk_overlap,True,CHUNK_OVERLAP = 160
+training_scripts,BART_JOURNAL_NICE_TO_HAVE.py:target_limit,True,MAX_TARGET_LEN = 512
+training_scripts,BART_JOURNAL_NICE_TO_HAVE.py:generation_limit,True,GEN_MAX_NEW_TOKENS = 512
+training_scripts,BART_JOURNAL_NICE_TO_HAVE.py:hpo_beams,True,HPO_NUM_BEAMS = 2
+training_scripts,BART_JOURNAL_NICE_TO_HAVE.py:final_beams,True,GEN_NUM_BEAMS = 6
+training_scripts,BART_JOURNAL_NICE_TO_HAVE.py:no_repeat_ngram,True,GEN_NO_REPEAT_NGRAM = 3
+training_scripts,BART_JOURNAL_NICE_TO_HAVE.py:source_visible_targets,True,def assign_skills_to_chunks(
+prediction_rules,BART_JOURNAL_NICE_TO_HAVE.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=1 generated=1
+prediction_rules,BART_JOURNAL_NICE_TO_HAVE.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=11 generated=11
+prediction_rules,BART_JOURNAL_NICE_TO_HAVE.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BART_JOURNAL_NICE_TO_HAVE.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BART_JOURNAL_SOFT_SKILLS.py:one_seed,True,SEEDS = [13]
+training_scripts,BART_JOURNAL_SOFT_SKILLS.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BART_JOURNAL_SOFT_SKILLS.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BART_JOURNAL_SOFT_SKILLS.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BART_JOURNAL_SOFT_SKILLS.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BART_JOURNAL_SOFT_SKILLS.py:validation_eval_mode,True,model.eval()
+training_scripts,BART_JOURNAL_SOFT_SKILLS.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BART_JOURNAL_SOFT_SKILLS.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BART_JOURNAL_SOFT_SKILLS.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BART_JOURNAL_SOFT_SKILLS.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BART_JOURNAL_SOFT_SKILLS.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BART_JOURNAL_SOFT_SKILLS.py:seed_before_initialization,True,calls=3
+training_scripts,BART_JOURNAL_SOFT_SKILLS.py:source_limit,True,MAX_SOURCE_LEN = 1024
+training_scripts,BART_JOURNAL_SOFT_SKILLS.py:chunk_limit,True,CHUNK_MAX_TOKENS = 1000
+training_scripts,BART_JOURNAL_SOFT_SKILLS.py:chunk_overlap,True,CHUNK_OVERLAP = 160
+training_scripts,BART_JOURNAL_SOFT_SKILLS.py:target_limit,True,MAX_TARGET_LEN = 512
+training_scripts,BART_JOURNAL_SOFT_SKILLS.py:generation_limit,True,GEN_MAX_NEW_TOKENS = 512
+training_scripts,BART_JOURNAL_SOFT_SKILLS.py:hpo_beams,True,HPO_NUM_BEAMS = 2
+training_scripts,BART_JOURNAL_SOFT_SKILLS.py:final_beams,True,GEN_NUM_BEAMS = 6
+training_scripts,BART_JOURNAL_SOFT_SKILLS.py:no_repeat_ngram,True,GEN_NO_REPEAT_NGRAM = 3
+training_scripts,BART_JOURNAL_SOFT_SKILLS.py:source_visible_targets,True,def assign_skills_to_chunks(
+prediction_rules,BART_JOURNAL_SOFT_SKILLS.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=0 generated=0
+prediction_rules,BART_JOURNAL_SOFT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=14 generated=14
+prediction_rules,BART_JOURNAL_SOFT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BART_JOURNAL_SOFT_SKILLS.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BART_MERGED.py:one_seed,True,SEEDS = [13]
+training_scripts,BART_MERGED.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BART_MERGED.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BART_MERGED.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BART_MERGED.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BART_MERGED.py:validation_eval_mode,True,model.eval()
+training_scripts,BART_MERGED.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BART_MERGED.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BART_MERGED.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BART_MERGED.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BART_MERGED.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BART_MERGED.py:seed_before_initialization,True,calls=3
+training_scripts,BART_MERGED.py:source_limit,True,MAX_SOURCE_LEN = 1024
+training_scripts,BART_MERGED.py:chunk_limit,True,CHUNK_MAX_TOKENS = 1000
+training_scripts,BART_MERGED.py:chunk_overlap,True,CHUNK_OVERLAP = 160
+training_scripts,BART_MERGED.py:target_limit,True,MAX_TARGET_LEN = 512
+training_scripts,BART_MERGED.py:generation_limit,True,GEN_MAX_NEW_TOKENS = 512
+training_scripts,BART_MERGED.py:hpo_beams,True,HPO_NUM_BEAMS = 2
+training_scripts,BART_MERGED.py:final_beams,True,GEN_NUM_BEAMS = 6
+training_scripts,BART_MERGED.py:no_repeat_ngram,True,GEN_NO_REPEAT_NGRAM = 3
+training_scripts,BART_MERGED.py:source_visible_targets,True,def assign_skills_to_chunks(
+prediction_rules,BART_MERGED.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=26 generated=26
+prediction_rules,BART_MERGED.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=21 generated=21
+prediction_rules,BART_MERGED.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BART_MERGED.py:PREDICTED_SKILL_STOPWORDS,True,embedded=285 generated=285
+training_scripts,BART_MERGED_DISTINCT_SKILLS.py:one_seed,True,SEEDS = [13]
+training_scripts,BART_MERGED_DISTINCT_SKILLS.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BART_MERGED_DISTINCT_SKILLS.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BART_MERGED_DISTINCT_SKILLS.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BART_MERGED_DISTINCT_SKILLS.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BART_MERGED_DISTINCT_SKILLS.py:validation_eval_mode,True,model.eval()
+training_scripts,BART_MERGED_DISTINCT_SKILLS.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BART_MERGED_DISTINCT_SKILLS.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BART_MERGED_DISTINCT_SKILLS.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BART_MERGED_DISTINCT_SKILLS.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BART_MERGED_DISTINCT_SKILLS.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BART_MERGED_DISTINCT_SKILLS.py:seed_before_initialization,True,calls=3
+training_scripts,BART_MERGED_DISTINCT_SKILLS.py:source_limit,True,MAX_SOURCE_LEN = 1024
+training_scripts,BART_MERGED_DISTINCT_SKILLS.py:chunk_limit,True,CHUNK_MAX_TOKENS = 1000
+training_scripts,BART_MERGED_DISTINCT_SKILLS.py:chunk_overlap,True,CHUNK_OVERLAP = 160
+training_scripts,BART_MERGED_DISTINCT_SKILLS.py:target_limit,True,MAX_TARGET_LEN = 512
+training_scripts,BART_MERGED_DISTINCT_SKILLS.py:generation_limit,True,GEN_MAX_NEW_TOKENS = 512
+training_scripts,BART_MERGED_DISTINCT_SKILLS.py:hpo_beams,True,HPO_NUM_BEAMS = 2
+training_scripts,BART_MERGED_DISTINCT_SKILLS.py:final_beams,True,GEN_NUM_BEAMS = 6
+training_scripts,BART_MERGED_DISTINCT_SKILLS.py:no_repeat_ngram,True,GEN_NO_REPEAT_NGRAM = 3
+training_scripts,BART_MERGED_DISTINCT_SKILLS.py:source_visible_targets,True,def assign_skills_to_chunks(
+prediction_rules,BART_MERGED_DISTINCT_SKILLS.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=1 generated=1
+prediction_rules,BART_MERGED_DISTINCT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=13 generated=13
+prediction_rules,BART_MERGED_DISTINCT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BART_MERGED_DISTINCT_SKILLS.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BART_MERGED_HARD_SKILLS.py:one_seed,True,SEEDS = [13]
+training_scripts,BART_MERGED_HARD_SKILLS.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BART_MERGED_HARD_SKILLS.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BART_MERGED_HARD_SKILLS.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BART_MERGED_HARD_SKILLS.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BART_MERGED_HARD_SKILLS.py:validation_eval_mode,True,model.eval()
+training_scripts,BART_MERGED_HARD_SKILLS.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BART_MERGED_HARD_SKILLS.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BART_MERGED_HARD_SKILLS.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BART_MERGED_HARD_SKILLS.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BART_MERGED_HARD_SKILLS.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BART_MERGED_HARD_SKILLS.py:seed_before_initialization,True,calls=3
+training_scripts,BART_MERGED_HARD_SKILLS.py:source_limit,True,MAX_SOURCE_LEN = 1024
+training_scripts,BART_MERGED_HARD_SKILLS.py:chunk_limit,True,CHUNK_MAX_TOKENS = 1000
+training_scripts,BART_MERGED_HARD_SKILLS.py:chunk_overlap,True,CHUNK_OVERLAP = 160
+training_scripts,BART_MERGED_HARD_SKILLS.py:target_limit,True,MAX_TARGET_LEN = 512
+training_scripts,BART_MERGED_HARD_SKILLS.py:generation_limit,True,GEN_MAX_NEW_TOKENS = 512
+training_scripts,BART_MERGED_HARD_SKILLS.py:hpo_beams,True,HPO_NUM_BEAMS = 2
+training_scripts,BART_MERGED_HARD_SKILLS.py:final_beams,True,GEN_NUM_BEAMS = 6
+training_scripts,BART_MERGED_HARD_SKILLS.py:no_repeat_ngram,True,GEN_NO_REPEAT_NGRAM = 3
+training_scripts,BART_MERGED_HARD_SKILLS.py:source_visible_targets,True,def assign_skills_to_chunks(
+prediction_rules,BART_MERGED_HARD_SKILLS.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=27 generated=27
+prediction_rules,BART_MERGED_HARD_SKILLS.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=19 generated=19
+prediction_rules,BART_MERGED_HARD_SKILLS.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BART_MERGED_HARD_SKILLS.py:PREDICTED_SKILL_STOPWORDS,True,embedded=285 generated=285
+training_scripts,BART_MERGED_MUST_HAVE.py:one_seed,True,SEEDS = [13]
+training_scripts,BART_MERGED_MUST_HAVE.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BART_MERGED_MUST_HAVE.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BART_MERGED_MUST_HAVE.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BART_MERGED_MUST_HAVE.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BART_MERGED_MUST_HAVE.py:validation_eval_mode,True,model.eval()
+training_scripts,BART_MERGED_MUST_HAVE.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BART_MERGED_MUST_HAVE.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BART_MERGED_MUST_HAVE.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BART_MERGED_MUST_HAVE.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BART_MERGED_MUST_HAVE.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BART_MERGED_MUST_HAVE.py:seed_before_initialization,True,calls=3
+training_scripts,BART_MERGED_MUST_HAVE.py:source_limit,True,MAX_SOURCE_LEN = 1024
+training_scripts,BART_MERGED_MUST_HAVE.py:chunk_limit,True,CHUNK_MAX_TOKENS = 1000
+training_scripts,BART_MERGED_MUST_HAVE.py:chunk_overlap,True,CHUNK_OVERLAP = 160
+training_scripts,BART_MERGED_MUST_HAVE.py:target_limit,True,MAX_TARGET_LEN = 512
+training_scripts,BART_MERGED_MUST_HAVE.py:generation_limit,True,GEN_MAX_NEW_TOKENS = 512
+training_scripts,BART_MERGED_MUST_HAVE.py:hpo_beams,True,HPO_NUM_BEAMS = 2
+training_scripts,BART_MERGED_MUST_HAVE.py:final_beams,True,GEN_NUM_BEAMS = 6
+training_scripts,BART_MERGED_MUST_HAVE.py:no_repeat_ngram,True,GEN_NO_REPEAT_NGRAM = 3
+training_scripts,BART_MERGED_MUST_HAVE.py:source_visible_targets,True,def assign_skills_to_chunks(
+prediction_rules,BART_MERGED_MUST_HAVE.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=17 generated=17
+prediction_rules,BART_MERGED_MUST_HAVE.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=18 generated=18
+prediction_rules,BART_MERGED_MUST_HAVE.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BART_MERGED_MUST_HAVE.py:PREDICTED_SKILL_STOPWORDS,True,embedded=285 generated=285
+training_scripts,BART_MERGED_NICE_TO_HAVE.py:one_seed,True,SEEDS = [13]
+training_scripts,BART_MERGED_NICE_TO_HAVE.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BART_MERGED_NICE_TO_HAVE.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BART_MERGED_NICE_TO_HAVE.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BART_MERGED_NICE_TO_HAVE.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BART_MERGED_NICE_TO_HAVE.py:validation_eval_mode,True,model.eval()
+training_scripts,BART_MERGED_NICE_TO_HAVE.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BART_MERGED_NICE_TO_HAVE.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BART_MERGED_NICE_TO_HAVE.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BART_MERGED_NICE_TO_HAVE.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BART_MERGED_NICE_TO_HAVE.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BART_MERGED_NICE_TO_HAVE.py:seed_before_initialization,True,calls=3
+training_scripts,BART_MERGED_NICE_TO_HAVE.py:source_limit,True,MAX_SOURCE_LEN = 1024
+training_scripts,BART_MERGED_NICE_TO_HAVE.py:chunk_limit,True,CHUNK_MAX_TOKENS = 1000
+training_scripts,BART_MERGED_NICE_TO_HAVE.py:chunk_overlap,True,CHUNK_OVERLAP = 160
+training_scripts,BART_MERGED_NICE_TO_HAVE.py:target_limit,True,MAX_TARGET_LEN = 512
+training_scripts,BART_MERGED_NICE_TO_HAVE.py:generation_limit,True,GEN_MAX_NEW_TOKENS = 512
+training_scripts,BART_MERGED_NICE_TO_HAVE.py:hpo_beams,True,HPO_NUM_BEAMS = 2
+training_scripts,BART_MERGED_NICE_TO_HAVE.py:final_beams,True,GEN_NUM_BEAMS = 6
+training_scripts,BART_MERGED_NICE_TO_HAVE.py:no_repeat_ngram,True,GEN_NO_REPEAT_NGRAM = 3
+training_scripts,BART_MERGED_NICE_TO_HAVE.py:source_visible_targets,True,def assign_skills_to_chunks(
+prediction_rules,BART_MERGED_NICE_TO_HAVE.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=11 generated=11
+prediction_rules,BART_MERGED_NICE_TO_HAVE.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=16 generated=16
+prediction_rules,BART_MERGED_NICE_TO_HAVE.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BART_MERGED_NICE_TO_HAVE.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+training_scripts,BART_MERGED_SOFT_SKILLS.py:one_seed,True,SEEDS = [13]
+training_scripts,BART_MERGED_SOFT_SKILLS.py:twenty_hpo_trials,True,HPO_TRIALS = 20
+training_scripts,BART_MERGED_SOFT_SKILLS.py:seeded_tpe,True,optuna.samplers.TPESampler(seed=seed)
+training_scripts,BART_MERGED_SOFT_SKILLS.py:exact_hpo_logged,True,"""eval_exact_f1"": metrics[""f1""]"
+training_scripts,BART_MERGED_SOFT_SKILLS.py:exact_hpo_returned,True,"return metrics[""f1""]"
+training_scripts,BART_MERGED_SOFT_SKILLS.py:validation_eval_mode,True,model.eval()
+training_scripts,BART_MERGED_SOFT_SKILLS.py:no_epoch_checkpoints,True,"save_strategy=""no"""
+training_scripts,BART_MERGED_SOFT_SKILLS.py:shared_input_builder,True,"return ""\n"".join(parts).strip()"
+training_scripts,BART_MERGED_SOFT_SKILLS.py:exact_dedupe_only,True,Normalize exact duplicates only; preserve distinct nested skill labels.
+training_scripts,BART_MERGED_SOFT_SKILLS.py:global_one_to_one,True,def maximum_cardinality_pairs(
+training_scripts,BART_MERGED_SOFT_SKILLS.py:token_containment,True,def is_contiguous_subseq(
+training_scripts,BART_MERGED_SOFT_SKILLS.py:seed_before_initialization,True,calls=3
+training_scripts,BART_MERGED_SOFT_SKILLS.py:source_limit,True,MAX_SOURCE_LEN = 1024
+training_scripts,BART_MERGED_SOFT_SKILLS.py:chunk_limit,True,CHUNK_MAX_TOKENS = 1000
+training_scripts,BART_MERGED_SOFT_SKILLS.py:chunk_overlap,True,CHUNK_OVERLAP = 160
+training_scripts,BART_MERGED_SOFT_SKILLS.py:target_limit,True,MAX_TARGET_LEN = 512
+training_scripts,BART_MERGED_SOFT_SKILLS.py:generation_limit,True,GEN_MAX_NEW_TOKENS = 512
+training_scripts,BART_MERGED_SOFT_SKILLS.py:hpo_beams,True,HPO_NUM_BEAMS = 2
+training_scripts,BART_MERGED_SOFT_SKILLS.py:final_beams,True,GEN_NUM_BEAMS = 6
+training_scripts,BART_MERGED_SOFT_SKILLS.py:no_repeat_ngram,True,GEN_NO_REPEAT_NGRAM = 3
+training_scripts,BART_MERGED_SOFT_SKILLS.py:source_visible_targets,True,def assign_skills_to_chunks(
+prediction_rules,BART_MERGED_SOFT_SKILLS.py:PREDICTED_SKILL_ALLOWLIST,True,embedded=0 generated=0
+prediction_rules,BART_MERGED_SOFT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_BLACKLIST,True,embedded=19 generated=19
+prediction_rules,BART_MERGED_SOFT_SKILLS.py:PREDICTED_SKILL_FRAGMENT_PREFIXES,True,embedded=0 generated=0
+prediction_rules,BART_MERGED_SOFT_SKILLS.py:PREDICTED_SKILL_STOPWORDS,True,embedded=286 generated=286
+prediction_rule_sources,test_data_not_used,True,"{""development_partitions"": [""train"", ""validation""], ""test_data_used"": false, ""minimum_attached_suffix_count"": 5, ""minimum_fragment_length"": 3}"
+prediction_rule_sources,all_18_rule_files_present,True,expected=18
+prediction_rule_sources,snowball_swedish_stopwords.txt,True,url=https://snowballstem.org/algorithms/swedish/stop.txt sha256=21632c7b2d9ae03e97f7da190811a3c4c022baa66b45d4e317bde205d54813a1
+prediction_rule_sources,snowball_english_stopwords.txt,True,url=https://snowballstem.org/algorithms/english/stop.txt sha256=06b8b14bbe6f6e0b64c0830813819416d96a71bec1655668d83b3e602a651db6
+prediction_rule_sources,snowball_swedish_stemmer.html,True,url=https://snowballstem.org/algorithms/swedish/stemmer.html sha256=ca57dc57dfcf3423b6d0f2d24f2747db9f3f20c30a1073a306addf4fba34b4af
+prediction_rule_sources,snowball_english_stemmer.html,True,url=https://snowballstem.org/algorithms/english/stemmer.html sha256=54fb05dff02c097ab427b10e53143c67241aee4d5152e0ab4bb6ce94d5975b10
+prediction_rule_sources,kblab_bert_vocab.txt,True,url=https://huggingface.co/KBLab/bert-base-swedish-cased/resolve/main/vocab.txt sha256=cf103a3207ce9ce64c4d9e306c2cb433e5987b6050a9d869914e1a8e2c781ad6
+prediction_rule_sources,kblab_bart_tokenizer.json,True,url=https://huggingface.co/KBLab/bart-base-swedish-cased/resolve/main/tokenizer.json sha256=baf79f9d99f5d793e9b78b6be1831258eb6175a43cc8cf0c9a38b9abfa06f4f6
+prediction_rule_sources,kblab_bert_model_api.json,True,url=https://huggingface.co/api/models/KBLab/bert-base-swedish-cased sha256=006da5e580a6d6acbcd07991f526d9bd90753988543bae344a1c8a92c90b3060
+prediction_rule_sources,kblab_bart_model_api.json,True,url=https://huggingface.co/api/models/KBLab/bart-base-swedish-cased sha256=0770abecd32ef46808cb1f3cf9a4e8834611cbef26e3b7212c73131cf3aafee7
+effective_bert_training,it:all_skills:implementation,True,"actual=(126, 126, 0, 0) expected=(126, 126, 0, 0)"
+effective_bert_training,it:all_skills:manuscript,True,Software developers & All skills & 126 & 126 & 0 & 0
+effective_bert_training,it:hard_skills:implementation,True,"actual=(125, 125, 0, 0) expected=(125, 125, 0, 0)"
+effective_bert_training,it:hard_skills:manuscript,True,Software developers & Hard skills & 125 & 125 & 0 & 0
+effective_bert_training,it:soft_skills:implementation,True,"actual=(122, 122, 0, 0) expected=(122, 122, 0, 0)"
+effective_bert_training,it:soft_skills:manuscript,True,Software developers & Soft skills & 122 & 122 & 0 & 0
+effective_bert_training,it:distinct_skills:implementation,True,"actual=(33, 33, 0, 0) expected=(33, 33, 0, 0)"
+effective_bert_training,it:distinct_skills:manuscript,True,Software developers & Distinct skills & 33 & 33 & 0 & 0
+effective_bert_training,it:must_have:implementation,True,"actual=(114, 114, 0, 0) expected=(114, 114, 0, 0)"
+effective_bert_training,it:must_have:manuscript,True,Software developers & Must-have skills & 114 & 114 & 0 & 0
+effective_bert_training,it:nice_to_have:implementation,True,"actual=(66, 66, 0, 0) expected=(66, 66, 0, 0)"
+effective_bert_training,it:nice_to_have:manuscript,True,Software developers & Nice-to-have skills & 66 & 66 & 0 & 0
+effective_bert_training,journal:all_skills:implementation,True,"actual=(129, 129, 0, 0) expected=(129, 129, 0, 0)"
+effective_bert_training,journal:all_skills:manuscript,True,Journalists & All skills & 129 & 129 & 0 & 0
+effective_bert_training,journal:hard_skills:implementation,True,"actual=(128, 128, 0, 0) expected=(128, 128, 0, 0)"
+effective_bert_training,journal:hard_skills:manuscript,True,Journalists & Hard skills & 128 & 128 & 0 & 0
+effective_bert_training,journal:soft_skills:implementation,True,"actual=(113, 113, 0, 0) expected=(113, 113, 0, 0)"
+effective_bert_training,journal:soft_skills:manuscript,True,Journalists & Soft skills & 113 & 113 & 0 & 0
+effective_bert_training,journal:distinct_skills:implementation,True,"actual=(79, 78, 1, 0) expected=(79, 78, 1, 0)"
+effective_bert_training,journal:distinct_skills:manuscript,True,Journalists & Distinct skills & 79 & 78 & 1 & 0
+effective_bert_training,journal:must_have:implementation,True,"actual=(128, 128, 0, 0) expected=(128, 128, 0, 0)"
+effective_bert_training,journal:must_have:manuscript,True,Journalists & Must-have skills & 128 & 128 & 0 & 0
+effective_bert_training,journal:nice_to_have:implementation,True,"actual=(71, 71, 0, 0) expected=(71, 71, 0, 0)"
+effective_bert_training,journal:nice_to_have:manuscript,True,Journalists & Nice-to-have skills & 71 & 71 & 0 & 0
+effective_bert_training,merged:all_skills:implementation,True,"actual=(255, 255, 0, 0) expected=(255, 255, 0, 0)"
+effective_bert_training,merged:all_skills:manuscript,True,Merged & All skills & 255 & 255 & 0 & 0
+effective_bert_training,merged:hard_skills:implementation,True,"actual=(254, 254, 0, 0) expected=(254, 254, 0, 0)"
+effective_bert_training,merged:hard_skills:manuscript,True,Merged & Hard skills & 254 & 254 & 0 & 0
+effective_bert_training,merged:soft_skills:implementation,True,"actual=(236, 236, 0, 0) expected=(236, 236, 0, 0)"
+effective_bert_training,merged:soft_skills:manuscript,True,Merged & Soft skills & 236 & 236 & 0 & 0
+effective_bert_training,merged:distinct_skills:implementation,True,"actual=(112, 111, 1, 0) expected=(112, 111, 1, 0)"
+effective_bert_training,merged:distinct_skills:manuscript,True,Merged & Distinct skills & 112 & 111 & 1 & 0
+effective_bert_training,merged:must_have:implementation,True,"actual=(243, 243, 0, 0) expected=(243, 243, 0, 0)"
+effective_bert_training,merged:must_have:manuscript,True,Merged & Must-have skills & 243 & 243 & 0 & 0
+effective_bert_training,merged:nice_to_have:implementation,True,"actual=(137, 137, 0, 0) expected=(137, 137, 0, 0)"
+effective_bert_training,merged:nice_to_have:manuscript,True,Merged & Nice-to-have skills & 137 & 137 & 0 & 0
+manuscript_methods,split_40_10_50_seed13,True,"40\% training, 10\% validation, and 50\% test data using seed 13"
+manuscript_methods,shared_input,True,the stripped headline and description joined by a newline
+manuscript_methods,bert_weighted_loss,True,weighted cross-entropy
+manuscript_methods,bert_window_stride,True,512 subwords with a stride of 128
+manuscript_methods,bart_source_chunks,True,"1,000 tokens were divided into overlapping chunks with 160-token overlap"
+manuscript_methods,bart_target_and_generation_limit,True,at most \OURSREV{96}{512} new tokens
+manuscript_methods,bart_beams,True,Validation used beam width two. Final generation used beam width six
+manuscript_methods,exact_hpo,True,returned \OURSREV{macro boundary-relaxed containment $F_1$}{exact normalized macro $F_1$}
+manuscript_methods,seeded_sampler,True,TPESampler(seed=13)
+manuscript_methods,exact_dedupe_only,True,only exact normalized duplicates were removed while distinct nested phrases were preserved
+manuscript_methods,maximum_cardinality_matching,True,deterministic maximum-cardinality bipartite matching separately at each cascade level
+manuscript_methods,token_containment,True,one normalized token sequence is a contiguous subsequence of the other
+manuscript_methods,containment_primary_reporting,True,boundary-relaxed containment macro $F_1$ remained} the primary cross-configuration
+manuscript_methods,single_seed_disclosure,True,All reported model results arise from a single data and training seed

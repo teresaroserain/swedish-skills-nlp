@@ -1,0 +1,77 @@
+[
+  {
+    "model": "claude",
+    "domain": "it",
+    "source_file": "/Users/Yuki/KeywordE/Split_data/update_data/other model/CL_IT.xlsx",
+    "output_file": "/Users/Yuki/KeywordE/Split_data/update_data/other model/processed_results/_normalized_source/claude_it.jsonl",
+    "row_count": 315,
+    "unique_id_count": 315,
+    "duplicate_row_count": 0,
+    "duplicate_ids": []
+  },
+  {
+    "model": "claude",
+    "domain": "journal",
+    "source_file": "/Users/Yuki/KeywordE/Split_data/update_data/other model/CL_Journal.xlsx",
+    "output_file": "/Users/Yuki/KeywordE/Split_data/update_data/other model/processed_results/_normalized_source/claude_journal.jsonl",
+    "row_count": 323,
+    "unique_id_count": 322,
+    "duplicate_row_count": 1,
+    "duplicate_ids": [
+      {
+        "id": "516554ec21763514f02a94514d00062219e1318f",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "model": "gemini",
+    "domain": "it",
+    "source_file": "/Users/Yuki/KeywordE/Split_data/update_data/other model/GEM_IT.xlsx",
+    "output_file": "/Users/Yuki/KeywordE/Split_data/update_data/other model/processed_results/_normalized_source/gemini_it.jsonl",
+    "row_count": 315,
+    "unique_id_count": 315,
+    "duplicate_row_count": 0,
+    "duplicate_ids": []
+  },
+  {
+    "model": "gemini",
+    "domain": "journal",
+    "source_file": "/Users/Yuki/KeywordE/Split_data/update_data/other model/GEM_Journal.xlsx",
+    "output_file": "/Users/Yuki/KeywordE/Split_data/update_data/other model/processed_results/_normalized_source/gemini_journal.jsonl",
+    "row_count": 323,
+    "unique_id_count": 322,
+    "duplicate_row_count": 1,
+    "duplicate_ids": [
+      {
+        "id": "516554ec21763514f02a94514d00062219e1318f",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "model": "gpt",
+    "domain": "it",
+    "source_file": "/Users/Yuki/KeywordE/Split_data/update_data/other model/GPT_IT (1).xlsx",
+    "output_file": "/Users/Yuki/KeywordE/Split_data/update_data/other model/processed_results/_normalized_source/gpt_it.jsonl",
+    "row_count": 315,
+    "unique_id_count": 315,
+    "duplicate_row_count": 0,
+    "duplicate_ids": []
+  },
+  {
+    "model": "gpt",
+    "domain": "journal",
+    "source_file": "/Users/Yuki/KeywordE/Split_data/update_data/other model/GPT_Journal (2).xlsx",
+    "output_file": "/Users/Yuki/KeywordE/Split_data/update_data/other model/processed_results/_normalized_source/gpt_journal.jsonl",
+    "row_count": 323,
+    "unique_id_count": 322,
+    "duplicate_row_count": 1,
+    "duplicate_ids": [
+      {
+        "id": "516554ec21763514f02a94514d00062219e1318f",
+        "count": 2
+      }
+    ]
+  }
+]

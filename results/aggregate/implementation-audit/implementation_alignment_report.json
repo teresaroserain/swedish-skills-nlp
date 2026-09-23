@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "release_root": "/Users/Yuki/KeywordE/Split_data/update_data/swedish-skill-extraction",
+  "manuscript": "/Users/Yuki/KeywordE/Split_data/update_data/swedish-skill-extraction/paper/source_snapshot/cas-sc-template.tex",
+  "total_checks": 925,
+  "passed_checks": 925,
+  "failed_checks": 0,
+  "failures": []
+}

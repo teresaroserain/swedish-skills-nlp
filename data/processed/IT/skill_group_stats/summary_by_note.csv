@@ -1,0 +1,5 @@
+﻿Note,must_have_count,must_have_count,must_have_count,must_have_count,must_have_count,nice_to_have_count,nice_to_have_count,nice_to_have_count,nice_to_have_count,nice_to_have_count,hard_skills_count,hard_skills_count,hard_skills_count,hard_skills_count,hard_skills_count,soft_skills_count,soft_skills_count,soft_skills_count,soft_skills_count,soft_skills_count,distinct_skills_count,distinct_skills_count,distinct_skills_count,distinct_skills_count,distinct_skills_count,total_5_groups_count,total_5_groups_count,total_5_groups_count,total_5_groups_count,total_5_groups_count
+,count,mean,median,max,sum,count,mean,median,max,sum,count,mean,median,max,sum,count,mean,median,max,sum,count,mean,median,max,sum,count,mean,median,max,sum
+39,1,0.0,0.0,0,0,1,0.0,0.0,0,0,1,0.0,0.0,0,0,1,0.0,0.0,0,0,1,0.0,0.0,0,0,1,0.0,0.0,0,0
+mix,2,3.5,3.5,6,7,2,2.0,2.0,4,4,2,11.5,11.5,13,23,2,10.0,10.0,13,20,2,0.0,0.0,0,0,2,27.0,27.0,32,54
+nan,273,6.465201465201465,5.0,28,1765,273,2.84981684981685,1.0,24,778,273,13.025641025641026,12.0,45,3556,273,7.417582417582418,7.0,22,2025,273,0.25274725274725274,0.0,4,69,273,30.01098901098901,28.0,96,8193

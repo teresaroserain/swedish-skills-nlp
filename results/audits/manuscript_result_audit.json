@@ -1,0 +1,502 @@
+{
+  "status": "pass",
+  "manuscript": "/Users/Yuki/KeywordE/Split_data/update_data/swedish-skill-extraction/paper/source_snapshot/cas-sc-template.tex",
+  "checks": 99,
+  "details": [
+    {
+      "name": "macro:BertSoftwareBefore",
+      "expected": "0.128",
+      "observed": "0.128"
+    },
+    {
+      "name": "macro:BertSoftwareAfter",
+      "expected": "0.621",
+      "observed": "0.621"
+    },
+    {
+      "name": "macro:BertSoftwareGain",
+      "expected": "0.494",
+      "observed": "0.494"
+    },
+    {
+      "name": "macro:BertJournalismBefore",
+      "expected": "0.159",
+      "observed": "0.159"
+    },
+    {
+      "name": "macro:BertJournalismAfter",
+      "expected": "0.687",
+      "observed": "0.687"
+    },
+    {
+      "name": "macro:BertJournalismGain",
+      "expected": "0.529",
+      "observed": "0.529"
+    },
+    {
+      "name": "macro:BertMergedBefore",
+      "expected": "0.146",
+      "observed": "0.146"
+    },
+    {
+      "name": "macro:BertMergedAfter",
+      "expected": "0.670",
+      "observed": "0.670"
+    },
+    {
+      "name": "macro:BertMergedGain",
+      "expected": "0.524",
+      "observed": "0.524"
+    },
+    {
+      "name": "macro:BartSoftwareBefore",
+      "expected": "0.052",
+      "observed": "0.052"
+    },
+    {
+      "name": "macro:BartSoftwareAfter",
+      "expected": "0.489",
+      "observed": "0.489"
+    },
+    {
+      "name": "macro:BartSoftwareGain",
+      "expected": "0.438",
+      "observed": "0.438"
+    },
+    {
+      "name": "macro:BartJournalismBefore",
+      "expected": "0.062",
+      "observed": "0.062"
+    },
+    {
+      "name": "macro:BartJournalismAfter",
+      "expected": "0.476",
+      "observed": "0.476"
+    },
+    {
+      "name": "macro:BartJournalismGain",
+      "expected": "0.413",
+      "observed": "0.413"
+    },
+    {
+      "name": "macro:BartMergedBefore",
+      "expected": "0.055",
+      "observed": "0.055"
+    },
+    {
+      "name": "macro:BartMergedAfter",
+      "expected": "0.528",
+      "observed": "0.528"
+    },
+    {
+      "name": "macro:BartMergedGain",
+      "expected": "0.473",
+      "observed": "0.473"
+    },
+    {
+      "name": "macro:BertSoftwareScore",
+      "expected": "0.621",
+      "observed": "0.621"
+    },
+    {
+      "name": "macro:BertJournalismScore",
+      "expected": "0.687",
+      "observed": "0.687"
+    },
+    {
+      "name": "macro:BertMergedScore",
+      "expected": "0.670",
+      "observed": "0.670"
+    },
+    {
+      "name": "macro:BartSoftwareScore",
+      "expected": "0.489",
+      "observed": "0.489"
+    },
+    {
+      "name": "macro:BartJournalismScore",
+      "expected": "0.476",
+      "observed": "0.476"
+    },
+    {
+      "name": "macro:BartMergedScore",
+      "expected": "0.528",
+      "observed": "0.528"
+    },
+    {
+      "name": "macro:GptSoftwareScore",
+      "expected": "0.620",
+      "observed": "0.620"
+    },
+    {
+      "name": "macro:GptJournalismScore",
+      "expected": "0.563",
+      "observed": "0.563"
+    },
+    {
+      "name": "macro:GptMergedScore",
+      "expected": "0.587",
+      "observed": "0.587"
+    },
+    {
+      "name": "macro:ClaudeSoftwareScore",
+      "expected": "0.637",
+      "observed": "0.637"
+    },
+    {
+      "name": "macro:ClaudeJournalismScore",
+      "expected": "0.557",
+      "observed": "0.557"
+    },
+    {
+      "name": "macro:ClaudeMergedScore",
+      "expected": "0.592",
+      "observed": "0.592"
+    },
+    {
+      "name": "macro:GeminiSoftwareScore",
+      "expected": "0.652",
+      "observed": "0.652"
+    },
+    {
+      "name": "macro:GeminiJournalismScore",
+      "expected": "0.590",
+      "observed": "0.590"
+    },
+    {
+      "name": "macro:GeminiMergedScore",
+      "expected": "0.615",
+      "observed": "0.615"
+    },
+    {
+      "name": "macro:BestSoftwareModel",
+      "expected": "prompted Gemini",
+      "observed": "prompted Gemini"
+    },
+    {
+      "name": "macro:BestSoftwareScore",
+      "expected": "0.652",
+      "observed": "0.652"
+    },
+    {
+      "name": "macro:BestSoftwarePrecision",
+      "expected": "0.663",
+      "observed": "0.663"
+    },
+    {
+      "name": "macro:BestSoftwareRecall",
+      "expected": "0.706",
+      "observed": "0.706"
+    },
+    {
+      "name": "macro:BestJournalismModel",
+      "expected": "fine-tuned Swedish BERT",
+      "observed": "fine-tuned Swedish BERT"
+    },
+    {
+      "name": "macro:BestJournalismScore",
+      "expected": "0.687",
+      "observed": "0.687"
+    },
+    {
+      "name": "macro:BestJournalismPrecision",
+      "expected": "0.601",
+      "observed": "0.601"
+    },
+    {
+      "name": "macro:BestJournalismRecall",
+      "expected": "0.872",
+      "observed": "0.872"
+    },
+    {
+      "name": "macro:BestMergedModel",
+      "expected": "fine-tuned Swedish BERT",
+      "observed": "fine-tuned Swedish BERT"
+    },
+    {
+      "name": "macro:BestMergedScore",
+      "expected": "0.670",
+      "observed": "0.670"
+    },
+    {
+      "name": "macro:BestMergedPrecision",
+      "expected": "0.607",
+      "observed": "0.607"
+    },
+    {
+      "name": "macro:BestMergedRecall",
+      "expected": "0.824",
+      "observed": "0.824"
+    },
+    {
+      "name": "macro:LargestGainConfiguration",
+      "expected": "Swedish BERT, journalism, soft skills",
+      "observed": "Swedish BERT, journalism, soft skills"
+    },
+    {
+      "name": "macro:LargestGainValue",
+      "expected": "0.641",
+      "observed": "0.641"
+    },
+    {
+      "name": "macro:SmallestGainConfiguration",
+      "expected": "Swedish BART, journalism, distinct skills",
+      "observed": "Swedish BART, journalism, distinct skills"
+    },
+    {
+      "name": "macro:SmallestGainValue",
+      "expected": "0.203",
+      "observed": "0.203"
+    },
+    {
+      "name": "macro:SoftwareExactContainmentGap",
+      "expected": "0.194",
+      "observed": "0.194"
+    },
+    {
+      "name": "macro:JournalismExactContainmentGap",
+      "expected": "0.234",
+      "observed": "0.234"
+    },
+    {
+      "name": "macro:MergedExactContainmentGap",
+      "expected": "0.220",
+      "observed": "0.220"
+    },
+    {
+      "name": "macro:AgreeExactLow",
+      "expected": "0.407",
+      "observed": "0.407"
+    },
+    {
+      "name": "macro:AgreeExactHigh",
+      "expected": "0.791",
+      "observed": "0.791"
+    },
+    {
+      "name": "macro:AgreeContainLow",
+      "expected": "0.712",
+      "observed": "0.712"
+    },
+    {
+      "name": "macro:AgreeContainHigh",
+      "expected": "1.000",
+      "observed": "1.000"
+    },
+    {
+      "name": "macro:NiceToHaveLow",
+      "expected": "0.802",
+      "observed": "0.802"
+    },
+    {
+      "name": "macro:NiceToHaveHigh",
+      "expected": "0.859",
+      "observed": "0.859"
+    },
+    {
+      "name": "macro:DistinctLow",
+      "expected": "0.444",
+      "observed": "0.444"
+    },
+    {
+      "name": "macro:DistinctHigh",
+      "expected": "0.506",
+      "observed": "0.506"
+    },
+    {
+      "name": "overall:BERT:No fine-tune",
+      "expected": "BERT & No fine-tune & 0.095 & 0.517 & 0.144 \\\\",
+      "observed": "BERT & No fine-tune & 0.095 & 0.517 & 0.144 \\\\"
+    },
+    {
+      "name": "overall:BERT:Fine-tuned",
+      "expected": "BERT & Fine-tuned & 0.588 & 0.836 & 0.659 \\\\",
+      "observed": "BERT & Fine-tuned & 0.588 & 0.836 & 0.659 \\\\"
+    },
+    {
+      "name": "overall:BART:No fine-tune",
+      "expected": "BART & No fine-tune & 0.277 & 0.036 & 0.056 \\\\",
+      "observed": "BART & No fine-tune & 0.277 & 0.036 & 0.056 \\\\"
+    },
+    {
+      "name": "overall:BART:Fine-tuned",
+      "expected": "BART & Fine-tuned & 0.653 & 0.455 & 0.498 \\\\",
+      "observed": "BART & Fine-tuned & 0.653 & 0.455 & 0.498 \\\\"
+    },
+    {
+      "name": "overall:GPT:Prompted",
+      "expected": "GPT & Prompted & 0.601 & 0.704 & 0.590 \\\\",
+      "observed": "GPT & Prompted & 0.601 & 0.704 & 0.590 \\\\"
+    },
+    {
+      "name": "overall:Gemini:Prompted",
+      "expected": "Gemini & Prompted & 0.680 & 0.654 & 0.619 \\\\",
+      "observed": "Gemini & Prompted & 0.680 & 0.654 & 0.619 \\\\"
+    },
+    {
+      "name": "overall:Claude:Prompted",
+      "expected": "Claude & Prompted & 0.654 & 0.630 & 0.595 \\\\",
+      "observed": "Claude & Prompted & 0.654 & 0.630 & 0.595 \\\\"
+    },
+    {
+      "name": "skill_mean:hard_skills",
+      "expected": "Hard skills & 0.706 & 0.514 & 0.566 & 0.582 & 0.577 \\\\",
+      "observed": "Hard skills & 0.706 & 0.514 & 0.566 & 0.582 & 0.577 \\\\"
+    },
+    {
+      "name": "skill_mean:soft_skills",
+      "expected": "Soft skills & 0.726 & 0.637 & 0.616 & 0.679 & 0.651 \\\\",
+      "observed": "Soft skills & 0.726 & 0.637 & 0.616 & 0.679 & 0.651 \\\\"
+    },
+    {
+      "name": "skill_mean:distinct_skills",
+      "expected": "Distinct skills & 0.466 & 0.320 & 0.430 & 0.422 & 0.372 \\\\",
+      "observed": "Distinct skills & 0.466 & 0.320 & 0.430 & 0.422 & 0.372 \\\\"
+    },
+    {
+      "name": "skill_mean:must_have",
+      "expected": "Must-have skills & 0.667 & 0.499 & 0.453 & 0.542 & 0.518 \\\\",
+      "observed": "Must-have skills & 0.667 & 0.499 & 0.453 & 0.542 & 0.518 \\\\"
+    },
+    {
+      "name": "skill_mean:nice_to_have",
+      "expected": "Nice-to-have skills & 0.616 & 0.446 & 0.804 & 0.819 & 0.799 \\\\",
+      "observed": "Nice-to-have skills & 0.616 & 0.446 & 0.804 & 0.819 & 0.799 \\\\"
+    },
+    {
+      "name": "skill_mean:all_skills",
+      "expected": "All skills & 0.776 & 0.569 & 0.670 & 0.670 & 0.656 \\\\",
+      "observed": "All skills & 0.776 & 0.569 & 0.670 & 0.670 & 0.656 \\\\"
+    },
+    {
+      "name": "skill_winner:hard_skills",
+      "expected": "Hard skills & BERT; 0.713 & BERT; 0.689 & BERT; 0.716 \\\\",
+      "observed": "Hard skills & BERT; 0.713 & BERT; 0.689 & BERT; 0.716 \\\\"
+    },
+    {
+      "name": "skill_winner:soft_skills",
+      "expected": "Soft skills & BERT; 0.705 & BERT; 0.735 & BERT; 0.738 \\\\",
+      "observed": "Soft skills & BERT; 0.705 & BERT; 0.735 & BERT; 0.738 \\\\"
+    },
+    {
+      "name": "skill_winner:distinct_skills",
+      "expected": "Distinct skills & Gemini; 0.444 & BERT; 0.506 & BERT; 0.471 \\\\",
+      "observed": "Distinct skills & Gemini; 0.444 & BERT; 0.506 & BERT; 0.471 \\\\"
+    },
+    {
+      "name": "skill_winner:must_have",
+      "expected": "Must-have skills & Gemini; 0.663 & BERT; 0.763 & BERT; 0.675 \\\\",
+      "observed": "Must-have skills & Gemini; 0.663 & BERT; 0.763 & BERT; 0.675 \\\\"
+    },
+    {
+      "name": "skill_winner:nice_to_have",
+      "expected": "Nice-to-have skills & Claude; 0.802 & Gemini; 0.859 & Gemini; 0.808 \\\\",
+      "observed": "Nice-to-have skills & Claude; 0.802 & Gemini; 0.859 & Gemini; 0.808 \\\\"
+    },
+    {
+      "name": "skill_winner:all_skills",
+      "expected": "All skills & BERT; 0.769 & BERT; 0.784 & BERT; 0.775 \\\\",
+      "observed": "All skills & BERT; 0.769 & BERT; 0.784 & BERT; 0.775 \\\\"
+    },
+    {
+      "name": "dataset_profile:it:hard_skills",
+      "expected": "Software developers & Hard skills & 315 & 4221 & 13.40 & 2.79 & 313 \\\\",
+      "observed": "Software developers & Hard skills & 315 & 4221 & 13.40 & 2.79 & 313 \\\\"
+    },
+    {
+      "name": "dataset_profile:it:soft_skills",
+      "expected": "Software developers & Soft skills & 315 & 2343 & 7.44 & 4.09 & 306 \\\\",
+      "observed": "Software developers & Soft skills & 315 & 2343 & 7.44 & 4.09 & 306 \\\\"
+    },
+    {
+      "name": "dataset_profile:it:distinct_skills",
+      "expected": "Software developers & Distinct skills & 315 & 179 & 0.57 & 2.11 & 83 \\\\",
+      "observed": "Software developers & Distinct skills & 315 & 179 & 0.57 & 2.11 & 83 \\\\"
+    },
+    {
+      "name": "dataset_profile:it:must_have",
+      "expected": "Software developers & Must-have skills & 315 & 2291 & 7.27 & 2.62 & 286 \\\\",
+      "observed": "Software developers & Must-have skills & 315 & 2291 & 7.27 & 2.62 & 286 \\\\"
+    },
+    {
+      "name": "dataset_profile:it:nice_to_have",
+      "expected": "Software developers & Nice-to-have skills & 315 & 907 & 2.88 & 2.06 & 166 \\\\",
+      "observed": "Software developers & Nice-to-have skills & 315 & 907 & 2.88 & 2.06 & 166 \\\\"
+    },
+    {
+      "name": "dataset_profile:journal:hard_skills",
+      "expected": "Journalists & Hard skills & 322 & 4853 & 15.07 & 4.99 & 321 \\\\",
+      "observed": "Journalists & Hard skills & 322 & 4853 & 15.07 & 4.99 & 321 \\\\"
+    },
+    {
+      "name": "dataset_profile:journal:soft_skills",
+      "expected": "Journalists & Soft skills & 322 & 1825 & 5.67 & 2.90 & 283 \\\\",
+      "observed": "Journalists & Soft skills & 322 & 1825 & 5.67 & 2.90 & 283 \\\\"
+    },
+    {
+      "name": "dataset_profile:journal:distinct_skills",
+      "expected": "Journalists & Distinct skills & 322 & 534 & 1.66 & 5.78 & 197 \\\\",
+      "observed": "Journalists & Distinct skills & 322 & 534 & 1.66 & 5.78 & 197 \\\\"
+    },
+    {
+      "name": "dataset_profile:journal:must_have",
+      "expected": "Journalists & Must-have skills & 322 & 6644 & 20.63 & 4.59 & 321 \\\\",
+      "observed": "Journalists & Must-have skills & 322 & 6644 & 20.63 & 4.59 & 321 \\\\"
+    },
+    {
+      "name": "dataset_profile:journal:nice_to_have",
+      "expected": "Journalists & Nice-to-have skills & 322 & 434 & 1.35 & 3.67 & 177 \\\\",
+      "observed": "Journalists & Nice-to-have skills & 322 & 434 & 1.35 & 3.67 & 177 \\\\"
+    },
+    {
+      "name": "reliability:software_developers:hard_skills",
+      "expected": "Software developers & Hard skills & 32 & 0.692 & 0.882 \\\\",
+      "observed": "Software developers & Hard skills & 32 & 0.692 & 0.882 \\\\"
+    },
+    {
+      "name": "reliability:software_developers:soft_skills",
+      "expected": "Software developers & Soft skills & 32 & 0.676 & 0.889 \\\\",
+      "observed": "Software developers & Soft skills & 32 & 0.676 & 0.889 \\\\"
+    },
+    {
+      "name": "reliability:software_developers:distinct_skills",
+      "expected": "Software developers & Distinct skills & 32 & 0.667 & 1.000 \\\\",
+      "observed": "Software developers & Distinct skills & 32 & 0.667 & 1.000 \\\\"
+    },
+    {
+      "name": "reliability:software_developers:must_have",
+      "expected": "Software developers & Must-have skills & 32 & 0.652 & 0.914 \\\\",
+      "observed": "Software developers & Must-have skills & 32 & 0.652 & 0.914 \\\\"
+    },
+    {
+      "name": "reliability:software_developers:nice_to_have",
+      "expected": "Software developers & Nice-to-have skills & 32 & 0.701 & 0.948 \\\\",
+      "observed": "Software developers & Nice-to-have skills & 32 & 0.701 & 0.948 \\\\"
+    },
+    {
+      "name": "reliability:journalists:hard_skills",
+      "expected": "Journalists & Hard skills & 35 & 0.489 & 0.792 \\\\",
+      "observed": "Journalists & Hard skills & 35 & 0.489 & 0.792 \\\\"
+    },
+    {
+      "name": "reliability:journalists:soft_skills",
+      "expected": "Journalists & Soft skills & 35 & 0.763 & 0.844 \\\\",
+      "observed": "Journalists & Soft skills & 35 & 0.763 & 0.844 \\\\"
+    },
+    {
+      "name": "reliability:journalists:distinct_skills",
+      "expected": "Journalists & Distinct skills & 35 & 0.407 & 0.712 \\\\",
+      "observed": "Journalists & Distinct skills & 35 & 0.407 & 0.712 \\\\"
+    },
+    {
+      "name": "reliability:journalists:must_have",
+      "expected": "Journalists & Must-have skills & 35 & 0.620 & 0.856 \\\\",
+      "observed": "Journalists & Must-have skills & 35 & 0.620 & 0.856 \\\\"
+    },
+    {
+      "name": "reliability:journalists:nice_to_have",
+      "expected": "Journalists & Nice-to-have skills & 35 & 0.791 & 0.977 \\\\",
+      "observed": "Journalists & Nice-to-have skills & 35 & 0.791 & 0.977 \\\\"
+    }
+  ]
+}

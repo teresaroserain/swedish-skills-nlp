@@ -1,0 +1,17 @@
+﻿label_type,metric,label,avg,total_items,overlap_total
+soft_skills,exact_ratio,review1,0.5889381914381915,250,153
+soft_skills,exact_ratio,review2,0.5592758113346349,270,153
+soft_skills,bm25_ratio,review1,0.9279761904761905,250,235
+soft_skills,bm25_ratio,review2,0.8942602169072758,270,242
+soft_skills,embed_ratio,review1,0.9235149110149109,250,229
+soft_skills,embed_ratio,review2,0.8822371201782968,270,234
+soft_skills,hybrid_ratio,review1,0.93760582010582,250,234
+soft_skills,hybrid_ratio,review2,0.8876178505590271,270,236
+soft_skills,merge_exact_ratio,review1,0.5889381914381915,250,153
+soft_skills,merge_exact_ratio,review2,0.5592758113346349,270,153
+soft_skills,merge_bm25_ratio,review1,0.9251851851851852,217,202
+soft_skills,merge_bm25_ratio,review2,0.8852116402116402,230,202
+soft_skills,merge_embed_ratio,review1,0.9231445406445408,247,226
+soft_skills,merge_embed_ratio,review2,0.8804427054427055,262,226
+soft_skills,merge_hybrid_ratio,review1,0.9363095238095238,246,230
+soft_skills,merge_hybrid_ratio,review2,0.8859011359011361,264,230

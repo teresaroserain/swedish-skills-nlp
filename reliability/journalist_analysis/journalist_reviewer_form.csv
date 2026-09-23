@@ -1,0 +1,20 @@
+﻿Cột 1,Reviewer 1,Reviewer 2,Ghi chú
+Hard skill avg overlap ratio,0.94,0.8,Total skill count là tập các skill (đã deduplicate)
+Hard skill total skill count,518,612,total overlap là tập skill overlap (đã deduplicate)
+Hard skill total overlap,487,487,Avg overlap ratio là trung bình tỉ lệ overlap trên toàn bộ sample
+,,,
+Soft skill avg overlap ratio,0.84,0.89,
+Soft skill total skill count,330,323,
+Soft skill total overlap,281,281,
+,,,
+Must have skill avg overlap ratio,0.94,0.88,
+Must have skill total skill count,847,931,
+Must have skill total overlap,808,808,
+,,,
+Nice to have skill avg overlap ratio,1,0.95,
+Nice to have skill total skill count,20,21,
+Nice to have skill total overlap,20,20,
+,,,
+Distinct skill avg overlap ratio,0.89,0.87,
+Distinct skill total skill count,40,28,
+Distinct skill total overlap,26,26,

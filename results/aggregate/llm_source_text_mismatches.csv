@@ -1,0 +1,127 @@
+﻿model,domain,id,affected_skill_views,surface_exact_after_normalization,token_exact_after_normalization,compact_exact_after_normalization,token_sequence_similarity,interpretation
+Claude,it,0d14ef2480d3a575b2402d632cebed56cf34c5b1,all_skills,False,False,True,0.9964994165694282,whitespace/punctuation-only difference
+Claude,it,1e17c3cba4b87e0ee3dac21994a04886d0cb8570,hard_skills | must_have,False,False,True,0.9903948772678762,whitespace/punctuation-only difference
+Claude,it,24a3816cb00ac81ba0e123ba35503851f4cffcd7,hard_skills | must_have,False,False,True,0.9967069154774972,whitespace/punctuation-only difference
+Claude,it,2a372f7eed4f4231f8c4d1a54c0bba4be8b20357,hard_skills,False,False,True,0.9841688654353562,whitespace/punctuation-only difference
+Claude,it,2cd4caec195215c21c020046688beac3c8f811ae,hard_skills | soft_skills,False,False,True,0.9922879177377892,whitespace/punctuation-only difference
+Claude,it,4afa8b4e665a3ef3117edf1b35ac9bd5c15160bd,all_skills,False,False,True,0.9957081545064378,whitespace/punctuation-only difference
+Claude,it,5a40d277e71b4529dbee5256b23ccb4324ade1ae,all_skills | hard_skills | must_have,False,False,True,0.9959183673469387,whitespace/punctuation-only difference
+Claude,it,67656e5b2ac26b0f370e26fe7b1cfcdfbc028a08,soft_skills,False,False,True,0.986322188449848,whitespace/punctuation-only difference
+Claude,it,7ce8020b8bc5a2ae7e3d0d515bb9504eb680b070,all_skills | must_have,False,False,True,0.9844827586206897,whitespace/punctuation-only difference
+Claude,it,85d6d8d0f38cce1eca507e80e7d5d8aa71a4ca46,must_have,False,False,True,0.9958734525447043,whitespace/punctuation-only difference
+Claude,it,8ae8ddfc9cbef95b57c16ed014f7cc286902e8b6,nice_to_have | soft_skills,False,False,True,0.9978798586572438,whitespace/punctuation-only difference
+Claude,it,bf195b70f17fd7852c3f26d661a58d83e5601ad8,soft_skills,False,False,True,0.9736123748862603,whitespace/punctuation-only difference
+Claude,it,ce06c255e20c53be97789edc7e8c74e03a02d8ff,all_skills | hard_skills | must_have | nice_to_have,False,False,True,0.9886547811993517,whitespace/punctuation-only difference
+Claude,it,d98b5b261e398686722a9e0bfc5b104d19d67b72,soft_skills,False,False,True,0.985781990521327,whitespace/punctuation-only difference
+Claude,it,dc6f1180a40d22010a17a2c1a5d366f2d355cce9,all_skills,False,False,True,0.9871244635193133,whitespace/punctuation-only difference
+Claude,it,e59c2ffb9faf58dc6f681f0dd6a1caf9a70bcea8,hard_skills | nice_to_have | soft_skills,False,False,True,0.9973521624007061,whitespace/punctuation-only difference
+Claude,it,e5eb5511b113f43f24551b9a598c3c7018344d80,hard_skills | must_have,False,False,True,0.9931972789115646,whitespace/punctuation-only difference
+Claude,it,eaebf7c9185b6bd1e02badd33b456a60a724bf4f,all_skills,False,False,True,0.9962546816479401,whitespace/punctuation-only difference
+Claude,it,f5b0b30656339d3244fc311fd1997eef42671e3d,hard_skills | must_have | soft_skills,False,False,True,0.994392523364486,whitespace/punctuation-only difference
+Claude,it,f69346c7492fd058f1d74583fdcc7f4e5d0b78df,soft_skills,False,False,True,0.9945553539019963,whitespace/punctuation-only difference
+Claude,it,fc5524ac3f04064213a12d27a7e3655928ab35a3,hard_skills,False,False,True,0.9972144846796658,whitespace/punctuation-only difference
+Claude,merged,0d14ef2480d3a575b2402d632cebed56cf34c5b1,all_skills | must_have,False,False,True,0.9964994165694282,whitespace/punctuation-only difference
+Claude,merged,1e17c3cba4b87e0ee3dac21994a04886d0cb8570,hard_skills,False,False,True,0.9903948772678762,whitespace/punctuation-only difference
+Claude,merged,24a3816cb00ac81ba0e123ba35503851f4cffcd7,hard_skills | must_have,False,False,True,0.9967069154774972,whitespace/punctuation-only difference
+Claude,merged,2cd4caec195215c21c020046688beac3c8f811ae,must_have | soft_skills,False,False,True,0.9922879177377892,whitespace/punctuation-only difference
+Claude,merged,4afa8b4e665a3ef3117edf1b35ac9bd5c15160bd,all_skills | hard_skills | must_have | soft_skills,False,False,True,0.9957081545064378,whitespace/punctuation-only difference
+Claude,merged,5a40d277e71b4529dbee5256b23ccb4324ade1ae,all_skills | hard_skills,False,False,True,0.9959183673469387,whitespace/punctuation-only difference
+Claude,merged,67656e5b2ac26b0f370e26fe7b1cfcdfbc028a08,hard_skills | soft_skills,False,False,True,0.986322188449848,whitespace/punctuation-only difference
+Claude,merged,6a01713adf2c502cef97d7ad4053ddccd8e3fa1b,hard_skills,False,False,True,0.9923076923076923,whitespace/punctuation-only difference
+Claude,merged,7ce8020b8bc5a2ae7e3d0d515bb9504eb680b070,all_skills | must_have | soft_skills,False,False,True,0.9844827586206897,whitespace/punctuation-only difference
+Claude,merged,85d6d8d0f38cce1eca507e80e7d5d8aa71a4ca46,must_have,False,False,True,0.9958734525447043,whitespace/punctuation-only difference
+Claude,merged,8ae8ddfc9cbef95b57c16ed014f7cc286902e8b6,must_have | nice_to_have,False,False,True,0.9978798586572438,whitespace/punctuation-only difference
+Claude,merged,bf195b70f17fd7852c3f26d661a58d83e5601ad8,hard_skills | must_have,False,False,True,0.9736123748862603,whitespace/punctuation-only difference
+Claude,merged,ce06c255e20c53be97789edc7e8c74e03a02d8ff,all_skills | hard_skills | must_have | nice_to_have | soft_skills,False,False,True,0.9886547811993517,whitespace/punctuation-only difference
+Claude,merged,d98b5b261e398686722a9e0bfc5b104d19d67b72,hard_skills | soft_skills,False,False,True,0.985781990521327,whitespace/punctuation-only difference
+Claude,merged,dc6f1180a40d22010a17a2c1a5d366f2d355cce9,all_skills | hard_skills | must_have,False,False,True,0.9871244635193133,whitespace/punctuation-only difference
+Claude,merged,e59c2ffb9faf58dc6f681f0dd6a1caf9a70bcea8,hard_skills | nice_to_have,False,False,True,0.9973521624007061,whitespace/punctuation-only difference
+Claude,merged,e5eb5511b113f43f24551b9a598c3c7018344d80,hard_skills | must_have,False,False,True,0.9931972789115646,whitespace/punctuation-only difference
+Claude,merged,eaebf7c9185b6bd1e02badd33b456a60a724bf4f,all_skills | soft_skills,False,False,True,0.9962546816479401,whitespace/punctuation-only difference
+Claude,merged,f5b0b30656339d3244fc311fd1997eef42671e3d,hard_skills,False,False,True,0.994392523364486,whitespace/punctuation-only difference
+Claude,merged,f69346c7492fd058f1d74583fdcc7f4e5d0b78df,soft_skills,False,False,True,0.9945553539019963,whitespace/punctuation-only difference
+Claude,merged,fc5524ac3f04064213a12d27a7e3655928ab35a3,hard_skills | must_have | soft_skills,False,False,True,0.9972144846796658,whitespace/punctuation-only difference
+GPT,it,0d14ef2480d3a575b2402d632cebed56cf34c5b1,all_skills,False,False,True,0.9964994165694282,whitespace/punctuation-only difference
+GPT,it,1e17c3cba4b87e0ee3dac21994a04886d0cb8570,hard_skills | must_have,False,False,True,0.9903948772678762,whitespace/punctuation-only difference
+GPT,it,24a3816cb00ac81ba0e123ba35503851f4cffcd7,hard_skills | must_have,False,False,True,0.9967069154774972,whitespace/punctuation-only difference
+GPT,it,2a372f7eed4f4231f8c4d1a54c0bba4be8b20357,hard_skills,False,False,True,0.9841688654353562,whitespace/punctuation-only difference
+GPT,it,2cd4caec195215c21c020046688beac3c8f811ae,hard_skills | soft_skills,False,False,True,0.9922879177377892,whitespace/punctuation-only difference
+GPT,it,4afa8b4e665a3ef3117edf1b35ac9bd5c15160bd,all_skills,False,False,True,0.9957081545064378,whitespace/punctuation-only difference
+GPT,it,5a40d277e71b4529dbee5256b23ccb4324ade1ae,all_skills | hard_skills | must_have,False,False,True,0.9959183673469387,whitespace/punctuation-only difference
+GPT,it,67656e5b2ac26b0f370e26fe7b1cfcdfbc028a08,soft_skills,False,False,True,0.986322188449848,whitespace/punctuation-only difference
+GPT,it,7ce8020b8bc5a2ae7e3d0d515bb9504eb680b070,all_skills | must_have,False,False,True,0.9844827586206897,whitespace/punctuation-only difference
+GPT,it,85d6d8d0f38cce1eca507e80e7d5d8aa71a4ca46,must_have,False,False,True,0.9958734525447043,whitespace/punctuation-only difference
+GPT,it,8ae8ddfc9cbef95b57c16ed014f7cc286902e8b6,nice_to_have | soft_skills,False,False,True,0.9978798586572438,whitespace/punctuation-only difference
+GPT,it,bf195b70f17fd7852c3f26d661a58d83e5601ad8,soft_skills,False,False,True,0.9736123748862603,whitespace/punctuation-only difference
+GPT,it,ce06c255e20c53be97789edc7e8c74e03a02d8ff,all_skills | hard_skills | must_have | nice_to_have,False,False,True,0.9886547811993517,whitespace/punctuation-only difference
+GPT,it,d98b5b261e398686722a9e0bfc5b104d19d67b72,soft_skills,False,False,True,0.985781990521327,whitespace/punctuation-only difference
+GPT,it,dc6f1180a40d22010a17a2c1a5d366f2d355cce9,all_skills,False,False,True,0.9871244635193133,whitespace/punctuation-only difference
+GPT,it,e59c2ffb9faf58dc6f681f0dd6a1caf9a70bcea8,hard_skills | nice_to_have | soft_skills,False,False,True,0.9973521624007061,whitespace/punctuation-only difference
+GPT,it,e5eb5511b113f43f24551b9a598c3c7018344d80,hard_skills | must_have,False,False,True,0.9931972789115646,whitespace/punctuation-only difference
+GPT,it,eaebf7c9185b6bd1e02badd33b456a60a724bf4f,all_skills,False,False,True,0.9962546816479401,whitespace/punctuation-only difference
+GPT,it,f5b0b30656339d3244fc311fd1997eef42671e3d,hard_skills | must_have | soft_skills,False,False,True,0.994392523364486,whitespace/punctuation-only difference
+GPT,it,f69346c7492fd058f1d74583fdcc7f4e5d0b78df,soft_skills,False,False,True,0.9945553539019963,whitespace/punctuation-only difference
+GPT,it,fc5524ac3f04064213a12d27a7e3655928ab35a3,hard_skills,False,False,True,0.9972144846796658,whitespace/punctuation-only difference
+GPT,merged,0d14ef2480d3a575b2402d632cebed56cf34c5b1,all_skills | must_have,False,False,True,0.9964994165694282,whitespace/punctuation-only difference
+GPT,merged,1e17c3cba4b87e0ee3dac21994a04886d0cb8570,hard_skills,False,False,True,0.9903948772678762,whitespace/punctuation-only difference
+GPT,merged,24a3816cb00ac81ba0e123ba35503851f4cffcd7,hard_skills | must_have,False,False,True,0.9967069154774972,whitespace/punctuation-only difference
+GPT,merged,2cd4caec195215c21c020046688beac3c8f811ae,must_have | soft_skills,False,False,True,0.9922879177377892,whitespace/punctuation-only difference
+GPT,merged,4afa8b4e665a3ef3117edf1b35ac9bd5c15160bd,all_skills | hard_skills | must_have | soft_skills,False,False,True,0.9957081545064378,whitespace/punctuation-only difference
+GPT,merged,5a40d277e71b4529dbee5256b23ccb4324ade1ae,all_skills | hard_skills,False,False,True,0.9959183673469387,whitespace/punctuation-only difference
+GPT,merged,67656e5b2ac26b0f370e26fe7b1cfcdfbc028a08,hard_skills | soft_skills,False,False,True,0.986322188449848,whitespace/punctuation-only difference
+GPT,merged,6a01713adf2c502cef97d7ad4053ddccd8e3fa1b,hard_skills,False,False,True,0.9923076923076923,whitespace/punctuation-only difference
+GPT,merged,7ce8020b8bc5a2ae7e3d0d515bb9504eb680b070,all_skills | must_have | soft_skills,False,False,True,0.9844827586206897,whitespace/punctuation-only difference
+GPT,merged,85d6d8d0f38cce1eca507e80e7d5d8aa71a4ca46,must_have,False,False,True,0.9958734525447043,whitespace/punctuation-only difference
+GPT,merged,8ae8ddfc9cbef95b57c16ed014f7cc286902e8b6,must_have | nice_to_have,False,False,True,0.9978798586572438,whitespace/punctuation-only difference
+GPT,merged,bf195b70f17fd7852c3f26d661a58d83e5601ad8,hard_skills | must_have,False,False,True,0.9736123748862603,whitespace/punctuation-only difference
+GPT,merged,ce06c255e20c53be97789edc7e8c74e03a02d8ff,all_skills | hard_skills | must_have | nice_to_have | soft_skills,False,False,True,0.9886547811993517,whitespace/punctuation-only difference
+GPT,merged,d98b5b261e398686722a9e0bfc5b104d19d67b72,hard_skills | soft_skills,False,False,True,0.985781990521327,whitespace/punctuation-only difference
+GPT,merged,dc6f1180a40d22010a17a2c1a5d366f2d355cce9,all_skills | hard_skills | must_have,False,False,True,0.9871244635193133,whitespace/punctuation-only difference
+GPT,merged,e59c2ffb9faf58dc6f681f0dd6a1caf9a70bcea8,hard_skills | nice_to_have,False,False,True,0.9973521624007061,whitespace/punctuation-only difference
+GPT,merged,e5eb5511b113f43f24551b9a598c3c7018344d80,hard_skills | must_have,False,False,True,0.9931972789115646,whitespace/punctuation-only difference
+GPT,merged,eaebf7c9185b6bd1e02badd33b456a60a724bf4f,all_skills | soft_skills,False,False,True,0.9962546816479401,whitespace/punctuation-only difference
+GPT,merged,f5b0b30656339d3244fc311fd1997eef42671e3d,hard_skills,False,False,True,0.994392523364486,whitespace/punctuation-only difference
+GPT,merged,f69346c7492fd058f1d74583fdcc7f4e5d0b78df,soft_skills,False,False,True,0.9945553539019963,whitespace/punctuation-only difference
+GPT,merged,fc5524ac3f04064213a12d27a7e3655928ab35a3,hard_skills | must_have | soft_skills,False,False,True,0.9972144846796658,whitespace/punctuation-only difference
+Gemini,it,0d14ef2480d3a575b2402d632cebed56cf34c5b1,all_skills,False,False,True,0.9964994165694282,whitespace/punctuation-only difference
+Gemini,it,1e17c3cba4b87e0ee3dac21994a04886d0cb8570,hard_skills | must_have,False,False,True,0.9903948772678762,whitespace/punctuation-only difference
+Gemini,it,24a3816cb00ac81ba0e123ba35503851f4cffcd7,hard_skills | must_have,False,False,True,0.9967069154774972,whitespace/punctuation-only difference
+Gemini,it,2a372f7eed4f4231f8c4d1a54c0bba4be8b20357,hard_skills,False,False,True,0.9841688654353562,whitespace/punctuation-only difference
+Gemini,it,2cd4caec195215c21c020046688beac3c8f811ae,hard_skills | soft_skills,False,False,True,0.9922879177377892,whitespace/punctuation-only difference
+Gemini,it,4afa8b4e665a3ef3117edf1b35ac9bd5c15160bd,all_skills,False,False,True,0.9957081545064378,whitespace/punctuation-only difference
+Gemini,it,5a40d277e71b4529dbee5256b23ccb4324ade1ae,all_skills | hard_skills | must_have,False,False,True,0.9959183673469387,whitespace/punctuation-only difference
+Gemini,it,67656e5b2ac26b0f370e26fe7b1cfcdfbc028a08,soft_skills,False,False,True,0.986322188449848,whitespace/punctuation-only difference
+Gemini,it,7ce8020b8bc5a2ae7e3d0d515bb9504eb680b070,all_skills | must_have,False,False,True,0.9844827586206897,whitespace/punctuation-only difference
+Gemini,it,85d6d8d0f38cce1eca507e80e7d5d8aa71a4ca46,must_have,False,False,True,0.9958734525447043,whitespace/punctuation-only difference
+Gemini,it,8ae8ddfc9cbef95b57c16ed014f7cc286902e8b6,nice_to_have | soft_skills,False,False,True,0.9978798586572438,whitespace/punctuation-only difference
+Gemini,it,bf195b70f17fd7852c3f26d661a58d83e5601ad8,soft_skills,False,False,True,0.9736123748862603,whitespace/punctuation-only difference
+Gemini,it,ce06c255e20c53be97789edc7e8c74e03a02d8ff,all_skills | hard_skills | must_have | nice_to_have,False,False,True,0.9886547811993517,whitespace/punctuation-only difference
+Gemini,it,d98b5b261e398686722a9e0bfc5b104d19d67b72,soft_skills,False,False,True,0.985781990521327,whitespace/punctuation-only difference
+Gemini,it,dc6f1180a40d22010a17a2c1a5d366f2d355cce9,all_skills,False,False,True,0.9871244635193133,whitespace/punctuation-only difference
+Gemini,it,e59c2ffb9faf58dc6f681f0dd6a1caf9a70bcea8,hard_skills | nice_to_have | soft_skills,False,False,True,0.9973521624007061,whitespace/punctuation-only difference
+Gemini,it,e5eb5511b113f43f24551b9a598c3c7018344d80,hard_skills | must_have,False,False,True,0.9931972789115646,whitespace/punctuation-only difference
+Gemini,it,eaebf7c9185b6bd1e02badd33b456a60a724bf4f,all_skills,False,False,True,0.9962546816479401,whitespace/punctuation-only difference
+Gemini,it,f5b0b30656339d3244fc311fd1997eef42671e3d,hard_skills | must_have | soft_skills,False,False,True,0.994392523364486,whitespace/punctuation-only difference
+Gemini,it,f69346c7492fd058f1d74583fdcc7f4e5d0b78df,soft_skills,False,False,True,0.9945553539019963,whitespace/punctuation-only difference
+Gemini,it,fc5524ac3f04064213a12d27a7e3655928ab35a3,hard_skills,False,False,True,0.9972144846796658,whitespace/punctuation-only difference
+Gemini,merged,0d14ef2480d3a575b2402d632cebed56cf34c5b1,all_skills | must_have,False,False,True,0.9964994165694282,whitespace/punctuation-only difference
+Gemini,merged,1e17c3cba4b87e0ee3dac21994a04886d0cb8570,hard_skills,False,False,True,0.9903948772678762,whitespace/punctuation-only difference
+Gemini,merged,24a3816cb00ac81ba0e123ba35503851f4cffcd7,hard_skills | must_have,False,False,True,0.9967069154774972,whitespace/punctuation-only difference
+Gemini,merged,2cd4caec195215c21c020046688beac3c8f811ae,must_have | soft_skills,False,False,True,0.9922879177377892,whitespace/punctuation-only difference
+Gemini,merged,4afa8b4e665a3ef3117edf1b35ac9bd5c15160bd,all_skills | hard_skills | must_have | soft_skills,False,False,True,0.9957081545064378,whitespace/punctuation-only difference
+Gemini,merged,5a40d277e71b4529dbee5256b23ccb4324ade1ae,all_skills | hard_skills,False,False,True,0.9959183673469387,whitespace/punctuation-only difference
+Gemini,merged,67656e5b2ac26b0f370e26fe7b1cfcdfbc028a08,hard_skills | soft_skills,False,False,True,0.986322188449848,whitespace/punctuation-only difference
+Gemini,merged,6a01713adf2c502cef97d7ad4053ddccd8e3fa1b,hard_skills,False,False,True,0.9923076923076923,whitespace/punctuation-only difference
+Gemini,merged,7ce8020b8bc5a2ae7e3d0d515bb9504eb680b070,all_skills | must_have | soft_skills,False,False,True,0.9844827586206897,whitespace/punctuation-only difference
+Gemini,merged,85d6d8d0f38cce1eca507e80e7d5d8aa71a4ca46,must_have,False,False,True,0.9958734525447043,whitespace/punctuation-only difference
+Gemini,merged,8ae8ddfc9cbef95b57c16ed014f7cc286902e8b6,must_have | nice_to_have,False,False,True,0.9978798586572438,whitespace/punctuation-only difference
+Gemini,merged,bf195b70f17fd7852c3f26d661a58d83e5601ad8,hard_skills | must_have,False,False,True,0.9736123748862603,whitespace/punctuation-only difference
+Gemini,merged,ce06c255e20c53be97789edc7e8c74e03a02d8ff,all_skills | hard_skills | must_have | nice_to_have | soft_skills,False,False,True,0.9886547811993517,whitespace/punctuation-only difference
+Gemini,merged,d98b5b261e398686722a9e0bfc5b104d19d67b72,hard_skills | soft_skills,False,False,True,0.985781990521327,whitespace/punctuation-only difference
+Gemini,merged,dc6f1180a40d22010a17a2c1a5d366f2d355cce9,all_skills | hard_skills | must_have,False,False,True,0.9871244635193133,whitespace/punctuation-only difference
+Gemini,merged,e59c2ffb9faf58dc6f681f0dd6a1caf9a70bcea8,hard_skills | nice_to_have,False,False,True,0.9973521624007061,whitespace/punctuation-only difference
+Gemini,merged,e5eb5511b113f43f24551b9a598c3c7018344d80,hard_skills | must_have,False,False,True,0.9931972789115646,whitespace/punctuation-only difference
+Gemini,merged,eaebf7c9185b6bd1e02badd33b456a60a724bf4f,all_skills | soft_skills,False,False,True,0.9962546816479401,whitespace/punctuation-only difference
+Gemini,merged,f5b0b30656339d3244fc311fd1997eef42671e3d,hard_skills,False,False,True,0.994392523364486,whitespace/punctuation-only difference
+Gemini,merged,f69346c7492fd058f1d74583fdcc7f4e5d0b78df,soft_skills,False,False,True,0.9945553539019963,whitespace/punctuation-only difference
+Gemini,merged,fc5524ac3f04064213a12d27a7e3655928ab35a3,hard_skills | must_have | soft_skills,False,False,True,0.9972144846796658,whitespace/punctuation-only difference

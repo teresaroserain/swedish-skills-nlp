@@ -1,0 +1,91 @@
+﻿model,domain,skill,expected_test_rows,available_prediction_rows,missing_test_ids,extra_prediction_ids,exact_test_id_order,duplicate_source_ids,text_exact_after_normalization,duplicate_id_policy,text_not_exact_after_normalization,text_token_exact_after_normalization,text_token_not_exact_after_normalization,text_compact_exact_after_normalization,text_compact_not_exact_after_normalization,minimum_token_sequence_similarity
+BERT,it,all_skills,157,157,0,0,True,0,not_applicable,not_applicable,,,,,,
+BART,it,all_skills,157,157,0,0,True,0,not_applicable,not_applicable,,,,,,
+GPT,it,all_skills,157,315,0,158,True,0,114,not_applicable,43,150,7,157,0,0.9844827586206897
+Gemini,it,all_skills,157,315,0,158,True,0,114,not_applicable,43,150,7,157,0,0.9844827586206897
+Claude,it,all_skills,157,315,0,158,True,0,114,not_applicable,43,150,7,157,0,0.9844827586206897
+BERT,it,hard_skills,157,157,0,0,True,0,not_applicable,not_applicable,,,,,,
+BART,it,hard_skills,157,157,0,0,True,0,not_applicable,not_applicable,,,,,,
+GPT,it,hard_skills,157,315,0,158,True,0,115,not_applicable,42,147,10,157,0,0.9841688654353562
+Gemini,it,hard_skills,157,315,0,158,True,0,115,not_applicable,42,147,10,157,0,0.9841688654353562
+Claude,it,hard_skills,157,315,0,158,True,0,115,not_applicable,42,147,10,157,0,0.9841688654353562
+BERT,it,soft_skills,153,153,0,0,True,0,not_applicable,not_applicable,,,,,,
+BART,it,soft_skills,153,153,0,0,True,0,not_applicable,not_applicable,,,,,,
+GPT,it,soft_skills,153,315,0,162,True,0,115,not_applicable,38,145,8,153,0,0.9736123748862603
+Gemini,it,soft_skills,153,315,0,162,True,0,115,not_applicable,38,145,8,153,0,0.9736123748862603
+Claude,it,soft_skills,153,315,0,162,True,0,115,not_applicable,38,145,8,153,0,0.9736123748862603
+BERT,it,distinct_skills,42,42,0,0,True,0,not_applicable,not_applicable,,,,,,
+BART,it,distinct_skills,42,42,0,0,True,0,not_applicable,not_applicable,,,,,,
+GPT,it,distinct_skills,42,315,0,273,True,0,30,not_applicable,12,42,0,42,0,1.0
+Gemini,it,distinct_skills,42,315,0,273,True,0,30,not_applicable,12,42,0,42,0,1.0
+Claude,it,distinct_skills,42,315,0,273,True,0,30,not_applicable,12,42,0,42,0,1.0
+BERT,it,must_have,143,143,0,0,True,0,not_applicable,not_applicable,,,,,,
+BART,it,must_have,143,143,0,0,True,0,not_applicable,not_applicable,,,,,,
+GPT,it,must_have,143,315,0,172,True,0,108,not_applicable,35,135,8,143,0,0.9844827586206897
+Gemini,it,must_have,143,315,0,172,True,0,108,not_applicable,35,135,8,143,0,0.9844827586206897
+Claude,it,must_have,143,315,0,172,True,0,108,not_applicable,35,135,8,143,0,0.9844827586206897
+BERT,it,nice_to_have,83,83,0,0,True,0,not_applicable,not_applicable,,,,,,
+BART,it,nice_to_have,83,83,0,0,True,0,not_applicable,not_applicable,,,,,,
+GPT,it,nice_to_have,83,315,0,232,True,0,62,not_applicable,21,80,3,83,0,0.9886547811993517
+Gemini,it,nice_to_have,83,315,0,232,True,0,62,not_applicable,21,80,3,83,0,0.9886547811993517
+Claude,it,nice_to_have,83,315,0,232,True,0,62,not_applicable,21,80,3,83,0,0.9886547811993517
+BERT,journal,all_skills,161,161,0,0,True,0,not_applicable,not_applicable,,,,,,
+BART,journal,all_skills,161,161,0,0,True,0,not_applicable,not_applicable,,,,,,
+GPT,journal,all_skills,161,322,0,161,True,1,145,retain first source occurrence (journal source row 4),16,161,0,161,0,1.0
+Gemini,journal,all_skills,161,322,0,161,True,1,145,retain first source occurrence (journal source row 4),16,161,0,161,0,1.0
+Claude,journal,all_skills,161,322,0,161,True,1,145,retain first source occurrence (journal source row 4),16,161,0,161,0,1.0
+BERT,journal,hard_skills,161,161,0,0,True,0,not_applicable,not_applicable,,,,,,
+BART,journal,hard_skills,161,161,0,0,True,0,not_applicable,not_applicable,,,,,,
+GPT,journal,hard_skills,161,322,0,161,True,1,141,retain first source occurrence (journal source row 4),20,161,0,161,0,1.0
+Gemini,journal,hard_skills,161,322,0,161,True,1,141,retain first source occurrence (journal source row 4),20,161,0,161,0,1.0
+Claude,journal,hard_skills,161,322,0,161,True,1,141,retain first source occurrence (journal source row 4),20,161,0,161,0,1.0
+BERT,journal,soft_skills,142,142,0,0,True,0,not_applicable,not_applicable,,,,,,
+BART,journal,soft_skills,142,142,0,0,True,0,not_applicable,not_applicable,,,,,,
+GPT,journal,soft_skills,142,322,0,180,True,1,128,retain first source occurrence (journal source row 4),14,142,0,142,0,1.0
+Gemini,journal,soft_skills,142,322,0,180,True,1,128,retain first source occurrence (journal source row 4),14,142,0,142,0,1.0
+Claude,journal,soft_skills,142,322,0,180,True,1,128,retain first source occurrence (journal source row 4),14,142,0,142,0,1.0
+BERT,journal,distinct_skills,98,98,0,0,True,0,not_applicable,not_applicable,,,,,,
+BART,journal,distinct_skills,98,98,0,0,True,0,not_applicable,not_applicable,,,,,,
+GPT,journal,distinct_skills,98,322,0,224,True,1,88,retain first source occurrence (journal source row 4),10,98,0,98,0,1.0
+Gemini,journal,distinct_skills,98,322,0,224,True,1,88,retain first source occurrence (journal source row 4),10,98,0,98,0,1.0
+Claude,journal,distinct_skills,98,322,0,224,True,1,88,retain first source occurrence (journal source row 4),10,98,0,98,0,1.0
+BERT,journal,must_have,161,161,0,0,True,0,not_applicable,not_applicable,,,,,,
+BART,journal,must_have,161,161,0,0,True,0,not_applicable,not_applicable,,,,,,
+GPT,journal,must_have,161,322,0,161,True,1,145,retain first source occurrence (journal source row 4),16,161,0,161,0,1.0
+Gemini,journal,must_have,161,322,0,161,True,1,145,retain first source occurrence (journal source row 4),16,161,0,161,0,1.0
+Claude,journal,must_have,161,322,0,161,True,1,145,retain first source occurrence (journal source row 4),16,161,0,161,0,1.0
+BERT,journal,nice_to_have,88,88,0,0,True,0,not_applicable,not_applicable,,,,,,
+BART,journal,nice_to_have,88,88,0,0,True,0,not_applicable,not_applicable,,,,,,
+GPT,journal,nice_to_have,88,322,0,234,True,1,78,retain first source occurrence (journal source row 4),10,88,0,88,0,1.0
+Gemini,journal,nice_to_have,88,322,0,234,True,1,78,retain first source occurrence (journal source row 4),10,88,0,88,0,1.0
+Claude,journal,nice_to_have,88,322,0,234,True,1,78,retain first source occurrence (journal source row 4),10,88,0,88,0,1.0
+BERT,merged,all_skills,318,318,0,0,True,0,not_applicable,not_applicable,,,,,,
+BART,merged,all_skills,318,318,0,0,True,0,not_applicable,not_applicable,,,,,,
+GPT,merged,all_skills,318,637,0,319,True,1,261,retain first source occurrence (journal source row 4),57,311,7,318,0,0.9844827586206897
+Gemini,merged,all_skills,318,637,0,319,True,1,261,retain first source occurrence (journal source row 4),57,311,7,318,0,0.9844827586206897
+Claude,merged,all_skills,318,637,0,319,True,1,261,retain first source occurrence (journal source row 4),57,311,7,318,0,0.9844827586206897
+BERT,merged,hard_skills,317,317,0,0,True,0,not_applicable,not_applicable,,,,,,
+BART,merged,hard_skills,317,317,0,0,True,0,not_applicable,not_applicable,,,,,,
+GPT,merged,hard_skills,317,637,0,320,True,1,253,retain first source occurrence (journal source row 4),64,303,14,317,0,0.9736123748862603
+Gemini,merged,hard_skills,317,637,0,320,True,1,253,retain first source occurrence (journal source row 4),64,303,14,317,0,0.9736123748862603
+Claude,merged,hard_skills,317,637,0,320,True,1,253,retain first source occurrence (journal source row 4),64,303,14,317,0,0.9736123748862603
+BERT,merged,soft_skills,294,294,0,0,True,0,not_applicable,not_applicable,,,,,,
+BART,merged,soft_skills,294,294,0,0,True,0,not_applicable,not_applicable,,,,,,
+GPT,merged,soft_skills,294,637,0,343,True,1,239,retain first source occurrence (journal source row 4),55,285,9,294,0,0.9844827586206897
+Gemini,merged,soft_skills,294,637,0,343,True,1,239,retain first source occurrence (journal source row 4),55,285,9,294,0,0.9844827586206897
+Claude,merged,soft_skills,294,637,0,343,True,1,239,retain first source occurrence (journal source row 4),55,285,9,294,0,0.9844827586206897
+BERT,merged,distinct_skills,140,140,0,0,True,0,not_applicable,not_applicable,,,,,,
+BART,merged,distinct_skills,140,140,0,0,True,0,not_applicable,not_applicable,,,,,,
+GPT,merged,distinct_skills,140,637,0,497,True,1,119,retain first source occurrence (journal source row 4),21,140,0,140,0,1.0
+Gemini,merged,distinct_skills,140,637,0,497,True,1,119,retain first source occurrence (journal source row 4),21,140,0,140,0,1.0
+Claude,merged,distinct_skills,140,637,0,497,True,1,119,retain first source occurrence (journal source row 4),21,140,0,140,0,1.0
+BERT,merged,must_have,303,303,0,0,True,0,not_applicable,not_applicable,,,,,,
+BART,merged,must_have,303,303,0,0,True,0,not_applicable,not_applicable,,,,,,
+GPT,merged,must_have,303,637,0,334,True,1,241,retain first source occurrence (journal source row 4),62,291,12,303,0,0.9736123748862603
+Gemini,merged,must_have,303,637,0,334,True,1,241,retain first source occurrence (journal source row 4),62,291,12,303,0,0.9736123748862603
+Claude,merged,must_have,303,637,0,334,True,1,241,retain first source occurrence (journal source row 4),62,291,12,303,0,0.9736123748862603
+BERT,merged,nice_to_have,172,172,0,0,True,0,not_applicable,not_applicable,,,,,,
+BART,merged,nice_to_have,172,172,0,0,True,0,not_applicable,not_applicable,,,,,,
+GPT,merged,nice_to_have,172,637,0,465,True,1,138,retain first source occurrence (journal source row 4),34,169,3,172,0,0.9886547811993517
+Gemini,merged,nice_to_have,172,637,0,465,True,1,138,retain first source occurrence (journal source row 4),34,169,3,172,0,0.9886547811993517
+Claude,merged,nice_to_have,172,637,0,465,True,1,138,retain first source occurrence (journal source row 4),34,169,3,172,0,0.9886547811993517

@@ -1,0 +1,10 @@
+datasets
+nltk
+numpy
+openpyxl
+optuna
+pandas
+sentence-transformers
+torch
+tqdm
+transformers

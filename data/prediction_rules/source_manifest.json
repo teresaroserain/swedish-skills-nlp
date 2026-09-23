@@ -1,0 +1,66 @@
+{
+  "source_files": [
+    {
+      "filename": "snowball_swedish_stopwords.txt",
+      "url": "https://snowballstem.org/algorithms/swedish/stop.txt",
+      "sha256": "21632c7b2d9ae03e97f7da190811a3c4c022baa66b45d4e317bde205d54813a1",
+      "bytes": 3104
+    },
+    {
+      "filename": "snowball_english_stopwords.txt",
+      "url": "https://snowballstem.org/algorithms/english/stop.txt",
+      "sha256": "06b8b14bbe6f6e0b64c0830813819416d96a71bec1655668d83b3e602a651db6",
+      "bytes": 4556
+    },
+    {
+      "filename": "snowball_swedish_stemmer.html",
+      "url": "https://snowballstem.org/algorithms/swedish/stemmer.html",
+      "sha256": "ca57dc57dfcf3423b6d0f2d24f2747db9f3f20c30a1073a306addf4fba34b4af",
+      "bytes": 27007
+    },
+    {
+      "filename": "snowball_english_stemmer.html",
+      "url": "https://snowballstem.org/algorithms/english/stemmer.html",
+      "sha256": "54fb05dff02c097ab427b10e53143c67241aee4d5152e0ab4bb6ce94d5975b10",
+      "bytes": 74292
+    },
+    {
+      "filename": "kblab_bert_vocab.txt",
+      "url": "https://huggingface.co/KBLab/bert-base-swedish-cased/resolve/main/vocab.txt",
+      "sha256": "cf103a3207ce9ce64c4d9e306c2cb433e5987b6050a9d869914e1a8e2c781ad6",
+      "bytes": 399162
+    },
+    {
+      "filename": "kblab_bart_tokenizer.json",
+      "url": "https://huggingface.co/KBLab/bart-base-swedish-cased/resolve/main/tokenizer.json",
+      "sha256": "baf79f9d99f5d793e9b78b6be1831258eb6175a43cc8cf0c9a38b9abfa06f4f6",
+      "bytes": 1478571
+    },
+    {
+      "filename": "kblab_bert_model_api.json",
+      "url": "https://huggingface.co/api/models/KBLab/bert-base-swedish-cased",
+      "sha256": "006da5e580a6d6acbcd07991f526d9bd90753988543bae344a1c8a92c90b3060",
+      "bytes": 1415
+    },
+    {
+      "filename": "kblab_bart_model_api.json",
+      "url": "https://huggingface.co/api/models/KBLab/bart-base-swedish-cased",
+      "sha256": "0770abecd32ef46808cb1f3cf9a4e8834611cbef26e3b7212c73131cf3aafee7",
+      "bytes": 1430
+    }
+  ],
+  "resolved_model_revisions": {
+    "KBLab/bert-base-swedish-cased": "ce7c3424687f042f1320e0528293d492c82918c4",
+    "KBLab/bart-base-swedish-cased": "3c1bfb23b9408f3f9001bfbb3440c560cf4496b2"
+  },
+  "nltk_version_used_to_read_snowball_suffix_tables": "3.9.1",
+  "derivation_policy": {
+    "development_partitions": [
+      "train",
+      "validation"
+    ],
+    "test_data_used": false,
+    "minimum_attached_suffix_count": 5,
+    "minimum_fragment_length": 3
+  }
+}

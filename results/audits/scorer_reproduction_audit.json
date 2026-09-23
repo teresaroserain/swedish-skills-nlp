@@ -1,0 +1,87 @@
+{
+  "status": "pass",
+  "reference": "/Users/Yuki/KeywordE/Split_data/update_data/swedish-skill-extraction/results/aggregate",
+  "recomputed": "/Users/Yuki/KeywordE/Split_data/update_data/integrity_audit/results/recomputed_current_manuscript_20260921",
+  "semantic_model": "KBLab/sentence-bert-swedish-cased",
+  "semantic_model_revision": "6b5e83cd29c03729cfdc33d13b1423399b0efb5c",
+  "comparisons": [
+    {
+      "filename": "all_models_all_metrics.csv",
+      "rows": 90,
+      "fields": 40,
+      "maximum_float_serialization_delta": 0.0
+    },
+    {
+      "filename": "all_models_per_ad_metrics.csv",
+      "rows": 15450,
+      "fields": 41,
+      "maximum_float_serialization_delta": 0.0
+    },
+    {
+      "filename": "domain_model_means.csv",
+      "rows": 15,
+      "fields": 21,
+      "maximum_float_serialization_delta": 0.0
+    },
+    {
+      "filename": "skill_model_means.csv",
+      "rows": 30,
+      "fields": 21,
+      "maximum_float_serialization_delta": 0.0
+    },
+    {
+      "filename": "domain_skill_means.csv",
+      "rows": 18,
+      "fields": 21,
+      "maximum_float_serialization_delta": 0.0
+    },
+    {
+      "filename": "overall_model_means.csv",
+      "rows": 5,
+      "fields": 20,
+      "maximum_float_serialization_delta": 0.0
+    },
+    {
+      "filename": "domain_winners_all_metrics.csv",
+      "rows": 12,
+      "fields": 7,
+      "maximum_float_serialization_delta": 0.0
+    },
+    {
+      "filename": "skill_winners_containment.csv",
+      "rows": 18,
+      "fields": 8,
+      "maximum_float_serialization_delta": 0.0
+    },
+    {
+      "filename": "skill_winners_exact.csv",
+      "rows": 18,
+      "fields": 8,
+      "maximum_float_serialization_delta": 0.0
+    },
+    {
+      "filename": "skill_winners_all_metrics.csv",
+      "rows": 72,
+      "fields": 8,
+      "maximum_float_serialization_delta": 0.0
+    },
+    {
+      "filename": "winner_counts_all_metrics.csv",
+      "rows": 20,
+      "fields": 3,
+      "maximum_float_serialization_delta": 0.0
+    },
+    {
+      "filename": "claim_audit.csv",
+      "rows": 14,
+      "fields": 6,
+      "maximum_float_serialization_delta": 0.0
+    },
+    {
+      "filename": "neural_recalculation_audit.csv",
+      "rows": 36,
+      "fields": 16,
+      "maximum_float_serialization_delta": 0.0
+    }
+  ]
+}

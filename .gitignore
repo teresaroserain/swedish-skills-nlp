@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.env
+.env.*
+kaggle.json
+*.pem
+*.key
+*.log
+.venv/
+venv/
+models/
+checkpoints/
+**/checkpoint-*/
