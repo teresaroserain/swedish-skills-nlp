@@ -65,6 +65,5 @@ manuscript table.
 
 ## 8. Integrity
 
-`manifests/file_manifest.csv` contains the public file size, SHA-256, and role.
 Frozen integrity, scorer-reproduction, implementation-alignment, and manuscript
 result reports are under `results/audits/` and `results/aggregate/`.

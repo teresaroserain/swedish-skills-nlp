@@ -33,7 +33,6 @@ utilize the code, annotated data, or prompts derived from this study.
 | `src/evaluation/` | Central scorer and before-versus-after comparison |
 | `reliability/` | Inter-annotator reliability code, inputs, tests, and outputs |
 | `results/` | Frozen model outputs, aggregate metrics, validation reports, and audits |
-| `manifests/` | File checksums and scientific pipeline inventory |
 
 ## Environment
 
@@ -218,8 +217,7 @@ The scientific release contains:
 - 10 recalculated inter-annotator domain-label rows under
   `reliability/results/`.
 
-Use `manifests/file_manifest.csv` to verify published file sizes and SHA-256
-checksums. Read `REPRODUCIBILITY.md` for the concise pipeline order and
+Read `REPRODUCIBILITY.md` for the concise pipeline order and
 `DATA_AND_LICENSE_CHECKLIST.md` before public distribution.
 
 The package contains one experimental seed, so rankings should be interpreted
