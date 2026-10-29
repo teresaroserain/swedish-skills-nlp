@@ -30,6 +30,7 @@ outputs on different test allocations, not 162 independent API runs.
 | `containment_length_*.csv` | Unchanged containment and supplementary 0.50/0.75 token-length-ratio constraints |
 | `prompt_test_isolation.csv`, `excluded_prompt_development_ids.csv` | Test-allocation checks and the five known exclusions |
 | `prompt_source_inventory.csv` | Ten retained occupation/label optimization sources and their checksums |
+| `prompt_source_partition_overlap.csv` | Source-pool intersections with fine-tuning train/validation/test allocations; zero overlap in retained tests |
 | `split_overlap.csv`, `frozen_hyperparameters.csv` | Partition overlap and frozen HPO selections |
 | `execution_metadata.csv`, `llm_request_settings.csv`, `llm_retry_policies.csv`, `recorded_environments.csv` | Recoverable execution and request settings, including unrecorded fields |
 | `per_advertisement_metrics.csv.gz` | 82,674 paired advertisement-level evaluations, with counts and scores; no advertisement text |

@@ -213,7 +213,7 @@ Prediction-only filtering rules are not applied to human annotations.
 
 ## Frozen artifacts and verification
 
-The scientific release contains:
+The original seed-13 artifact release contains:
 
 - 36 fine-tuned BERT/BART output archives under `results/neural_run_zips/`.
 - 36 task-unadapted control archives under
@@ -225,8 +225,13 @@ The scientific release contains:
 Read `REPRODUCIBILITY.md` for the concise pipeline order and
 `DATA_AND_LICENSE_CHECKLIST.md` before public distribution.
 
-The package contains one experimental seed, so rankings should be interpreted
-descriptively. No password, API key, OAuth token, Kaggle credential, virtual
+The original ZIP archive set covers one experimental seed. The revised
+supplementary tables additionally cover 324 fine-tuning configurations across
+three partition seeds and three training seeds, together with 162 evaluations
+of saved prompted outputs. These repeated configurations are not independent
+test samples. The original training commands above describe the seed-13 HPO
+scripts; the supplementary tables report additional runs with frozen
+hyperparameters. No password, API key, OAuth token, Kaggle credential, virtual
 environment, or model checkpoint is intentionally included.
 
 The repository is distributed under the existing MIT License; see
