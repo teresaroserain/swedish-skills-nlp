@@ -1,0 +1,3 @@
+﻿gpu_name,python_version,torch_version,transformers_version
+Tesla T4,3.13.15,2.11.0+cu128,5.16.1
+Tesla T4,3.13.15,2.11.0+cu130,5.16.1

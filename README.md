@@ -33,6 +33,11 @@ utilize the code, annotated data, or prompts derived from this study.
 | `src/evaluation/` | Central scorer and before-versus-after comparison |
 | `reliability/` | Inter-annotator reliability code, inputs, tests, and outputs |
 | `results/` | Frozen model outputs, aggregate metrics, validation reports, and audits |
+| `results/supplementary/` | Revised evaluation tables, exact macro/micro scores, paired bootstrap comparisons, seed-grid summaries, alignment audits, and error analysis |
+
+The supplementary CSVs for the revised manuscript are in
+[`results/supplementary/`](results/supplementary/). Its README describes metric
+definitions, known-ID exclusions, source hashes and the manuscript-table map.
 
 ## Environment
 

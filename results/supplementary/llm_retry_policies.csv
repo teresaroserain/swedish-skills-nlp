@@ -1,0 +1,4 @@
+﻿Model,Application attempts,Backoff / pacing,Failure behavior,Important distinction
+GPT,At most 4 calls to the SDK wrapper,"1, 2, 4 s before subsequent attempts; terminal 8 s sleep on final retryable failure",Retry selected transient error strings; return empty text for permanent/exhausted failures,"4 total application attempts, not 4 extra retries; SDK retries are a separate layer"
+Gemini,At most 5 calls to the SDK wrapper,"2, 4, 8, 16 s before subsequent attempts; terminal 32 s sleep; 1 s per processed row",Retry API 429/503 and caught connection exceptions; stop pipeline if exhausted/permanent,"5 total application attempts, not 5 extra retries; no actual retry history inferred"
+Claude,One SDK invocation per unprocessed row in normal mode,60 s pause after a RateLimitError escapes the SDK,continue advances to the next row; it is not a retry of the same row in this loop,SDK retry defaults were not overridden; no claim of zero HTTP retries or batch execution

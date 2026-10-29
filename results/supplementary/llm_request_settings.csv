@@ -1,0 +1,4 @@
+﻿Model,Requested model ID,API method,Notebook location,temperature,top_p,top_k,max_tokens,max_output_tokens,reasoning,text,config,stream
+GPT,gpt-5,client.responses.create,"cell 3, lines 23-26",Not supplied,Not supplied,Not supplied,Not supplied,Not supplied,Not supplied,Not supplied,Not supplied,Not supplied
+Gemini,gemini-3.5-flash,client.models.generate_content,"cell 5, lines 29-32",Not supplied,Not supplied,Not supplied,Not supplied,Not supplied,Not supplied,Not supplied,Not supplied,Not supplied
+Claude,claude-sonnet-4-6,client.messages.create,"cell 7, lines 127-131",Not supplied,Not supplied,Not supplied,2048,Not supplied,Not supplied,Not supplied,Not supplied,Not supplied

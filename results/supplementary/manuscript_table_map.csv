@@ -1,0 +1,13 @@
+manuscript_label,table_number_in_manuscript_9,csv_file
+tab:bert-effective-training,6,bert_alignment_counts.csv
+tab:alignment-training,17,bert_alignment_counts.csv
+tab:bootstrap-domain,14,bootstrap_job_category_comparisons.csv
+tab:frozen-controls,15,frozen_control_comparison.csv
+tab:error-analysis,16,error_model_label_scores.csv
+tab:label-overlap,1,label_overlap.csv
+tab:offset-diagnostics,18,derived_offset_scores.csv
+tab:sensitivity-coverage,19,gold_subset_coverage.csv
+tab:sensitivity-scores,20,gold_subset_model_scores.csv
+tab:reference-exact-containment,21,reference_job_category_scores.csv
+tab:grid-summary,22,fine_tuning_grid_summary.csv
+tab:containment-length-sensitivity,23,containment_length_reference_scores.csv
