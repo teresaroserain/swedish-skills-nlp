@@ -20,7 +20,7 @@ utilize the code, annotated data, or prompts derived from this study.
 
 | Path | Contents |
 | --- | --- |
-| `data/raw_annotations/` | Source Excel annotation workbooks |
+| `data/annotation_file/` | Source Excel annotation workbooks |
 | `data/processed/` | Processed IT, journalist, and merged datasets |
 | `data/prompt_development_sources/` | Prompt-development ID sources used by the split generator |
 | `data/splits/` | Frozen seed-13 train, validation, and test files and manifests |
@@ -60,7 +60,7 @@ limitation.
 
 ## Data processing
 
-The two source workbooks are already present under `data/raw_annotations/`.
+The two source workbooks are already present under `data/annotation_file/`.
 The following commands rebuild the processed domain files in
 `data/processed/`:
 
@@ -170,6 +170,25 @@ are `all_skills`, `hard_skills`, `soft_skills`, `distinct_skills`,
 `must_have`, and `nice_to_have`.
 
 ## Evaluation
+
+### Manuscript reproducibility map
+
+| Artifact | Exact file or location |
+| --- | --- |
+| IT and Journalism annotations | `data/annotation_file/IT_10percent_filtered_labels.xlsx`, `data/annotation_file/journalist_24_25_filtered_fullLabels.xlsx` |
+| Released final prompts | `SEJobAd_Prompts.docx`; request settings are in `LLMs_running.ipynb` and `results/supplementary/llm_request_settings.csv` |
+| Reference partition IDs | `data/splits/manifests/*_split_manifest_seed13.csv`; the `id` and `split` columns identify membership |
+| Retained test IDs | `results/supplementary/per_advertisement_metrics.csv.gz`, keyed by domain, task, partition seed and advertisement ID; exclusions are in `results/supplementary/excluded_prompt_development_ids.csv` |
+| Recompute reference-archive metrics | `python src/evaluation/evaluate_all_models.py --output-root results/recomputed` (original reference release; use the supplementary CSVs for the overlap-excluded manuscript scores) |
+| Manuscript table mapping | `results/supplementary/manuscript_table_map.csv` (use LaTeX labels as the stable keys) |
+
+The reference model configuration uses split/training seed 13/13. The
+supplementary grid crosses partition and training seeds 13, 42 and 2026
+with frozen hyperparameters. The partition seed and training seed columns
+are explicit in `results/supplementary/fine_tuning_grid.csv`; not every
+training archive or API backend snapshot is needed to inspect the frozen
+manuscript scores. See `results/supplementary/README.md` for the metric,
+aggregation, bootstrap and checksum conventions.
 
 The release already contains the validated fine-tuned and task-unadapted ZIP
 archives. Recompute all metrics for BERT, BART, GPT, Gemini, and Claude with:

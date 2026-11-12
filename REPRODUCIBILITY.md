@@ -9,7 +9,7 @@ merged processed files.
 `src/data_processing/combine_datasets.py` creates each `all_skills_list` dataset.
 
 The scripts use repository-relative paths. The corresponding inputs are in
-`data/raw_annotations/`, and regenerated outputs are written to
+`data/annotation_file/`, and regenerated outputs are written to
 `data/processed/`.
 
 ## 2. Prompt-safe split

@@ -23,7 +23,7 @@ DATASETS: list[DatasetConfig] = [
     DatasetConfig(
         name="IT",
         xlsx_path=str(
-            DATA_ROOT / "raw_annotations" / "IT_10percent_filtered_labels.xlsx"
+            DATA_ROOT / "annotation_file" / "IT_10percent_filtered_labels.xlsx"
         ),
         sheet_name=None,
         out_dir=DATA_ROOT / "processed" / "IT",
@@ -32,7 +32,7 @@ DATASETS: list[DatasetConfig] = [
     DatasetConfig(
         name="journal",
         xlsx_path=str(
-            DATA_ROOT / "raw_annotations" / "journalist_24_25_filtered_fullLabels.xlsx"
+            DATA_ROOT / "annotation_file" / "journalist_24_25_filtered_fullLabels.xlsx"
         ),
         sheet_name=None,
         out_dir=DATA_ROOT / "processed" / "journal",
