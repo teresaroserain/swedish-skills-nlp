@@ -1,0 +1,3 @@
+artifact_type,manuscript_label,number_in_manuscript_10,csv_files
+figure,fig:bert-learning-curve,5,"bert_learning_curve/results/all_skills_summary.csv; bert_learning_curve/results/domain_summary.csv; bert_learning_curve/results/task_summary.csv; bert_learning_curve/results/run_metrics.csv"
+table,tab:round2-error-examples,24,error_examples.csv

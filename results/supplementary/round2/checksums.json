@@ -1,0 +1,67 @@
+[
+  {
+    "file": "bert_learning_curve/results/all_skills_summary.csv",
+    "sha256": "c7b5c1e1d376a8aec42b3f1272c9c9bd6b2b11ea8098d51ab1dad77ed2a3a540",
+    "source_sha256": "c7b5c1e1d376a8aec42b3f1272c9c9bd6b2b11ea8098d51ab1dad77ed2a3a540",
+    "local_path_columns_reduced_to_filename": []
+  },
+  {
+    "file": "bert_learning_curve/results/task_summary.csv",
+    "sha256": "b5055691337aa765600b30d4e845a8210c0c8adf2ba2345f8ab67c9df52abcdb",
+    "source_sha256": "b5055691337aa765600b30d4e845a8210c0c8adf2ba2345f8ab67c9df52abcdb",
+    "local_path_columns_reduced_to_filename": []
+  },
+  {
+    "file": "bert_learning_curve/results/domain_summary.csv",
+    "sha256": "5f6b180f0197797fb01a75e389754e27754f8ff387402ca8d01d6fa241747163",
+    "source_sha256": "5f6b180f0197797fb01a75e389754e27754f8ff387402ca8d01d6fa241747163",
+    "local_path_columns_reduced_to_filename": []
+  },
+  {
+    "file": "bert_learning_curve/results/domain_by_seed.csv",
+    "sha256": "14956266d5087436fb6182abf68e3b4e094e8823721c60d15e752a63900c289a",
+    "source_sha256": "14956266d5087436fb6182abf68e3b4e094e8823721c60d15e752a63900c289a",
+    "local_path_columns_reduced_to_filename": []
+  },
+  {
+    "file": "bert_learning_curve/results/run_metrics.csv",
+    "sha256": "cc541a5d26fcaf8fc8fa6a880e645ff589e5b765c25392b70be490a2cc5190e7",
+    "source_sha256": "cc541a5d26fcaf8fc8fa6a880e645ff589e5b765c25392b70be490a2cc5190e7",
+    "local_path_columns_reduced_to_filename": []
+  },
+  {
+    "file": "bert_learning_curve/results/coverage.csv",
+    "sha256": "d4c4f1483d95be604d99c6a43f9345a90a3a803328582786d9070c3debad1376",
+    "source_sha256": "d4c4f1483d95be604d99c6a43f9345a90a3a803328582786d9070c3debad1376",
+    "local_path_columns_reduced_to_filename": []
+  },
+  {
+    "file": "bert_learning_curve/results/exclusion_audit.csv",
+    "sha256": "0cbb7dc7a372cf600533820983ce44d1d119d7a0be365266f9e6fa9066084b13",
+    "source_sha256": "0cbb7dc7a372cf600533820983ce44d1d119d7a0be365266f9e6fa9066084b13",
+    "local_path_columns_reduced_to_filename": []
+  },
+  {
+    "file": "bert_learning_curve/results/per_ad_metrics.csv.gz",
+    "sha256": "080e6cbd1bdd42c8568e267cd9fb76b7dd275c4a4b117b447cdfd0280b5472ad",
+    "source_sha256": "080e6cbd1bdd42c8568e267cd9fb76b7dd275c4a4b117b447cdfd0280b5472ad",
+    "local_path_columns_reduced_to_filename": []
+  },
+  {
+    "file": "error_examples.csv",
+    "sha256": "933f302c62f4e065f6110f5e0e0adc6d6587e182802e166658eac4a3dcbcd16c",
+    "source_sha256": "ec9b033192c13355452bbc57b6f12146d13bba368df794da3a6cdef5569c5b9d",
+    "rows": 20,
+    "local_path_columns_reduced_to_filename": [
+      "result_file",
+      "data_file",
+      "manifest"
+    ],
+    "additional_display_columns": [
+      "source_excerpt_sv",
+      "source_excerpt_en",
+      "prediction_excerpt",
+      "gold_excerpt"
+    ]
+  }
+]

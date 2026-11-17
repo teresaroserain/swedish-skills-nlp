@@ -36,6 +36,13 @@ outputs on different test allocations, not 162 independent API runs.
 | `per_advertisement_metrics.csv.gz` | 82,674 paired advertisement-level evaluations, with counts and scores; no advertisement text |
 | `manuscript_table_map.csv` | Manuscript labels, table numbers in source version 9, and corresponding CSVs |
 | `checksums.json` | Export/source SHA-256 hashes and any path-only sanitization |
+| `round2/bert_learning_curve/results/` | Eight-fraction BERT learning curves: 432 configurations, per-advertisement metrics, and three-seed summaries for Figure 5 |
+| `round2/error_examples.csv` | All 20 Table 24 examples, including full IDs, advertisement text, Swedish/English excerpts, and full plus displayed prediction/gold lists |
+| `round2/manuscript_map.csv`, `round2/checksums.json`, `round2/validation_report.json` | Additional manuscript mapping, source/export hashes, and checks for the new CSVs |
+
+See [the Round 2 data guide](round2/README.md) for the new files. They supplement
+the existing reference release; no original prediction archives or score tables
+were replaced.
 
 ## Metric definitions
 

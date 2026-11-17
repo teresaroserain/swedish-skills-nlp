@@ -1,0 +1,15 @@
+{
+  "learning_curve_configurations": 432,
+  "learning_curve_summary_groups": 144,
+  "learning_curve_advertisement_rows": 73512,
+  "excluded_ids_in_learning_curve_scores": 0,
+  "table24_examples": 20,
+  "examples_reverified_against_original_saved_outputs": true,
+  "source_excerpts_verified_against_advertisements": true,
+  "original_model_results_changed": false,
+  "original_score_values_changed": false,
+  "example_predicted_and_gold_lists_changed": false,
+  "excluded_ids_in_examples": 0,
+  "learning_source_report_sha256": "c99560acc2cfd303996647ee6c52c3081013e855088a0b2df32b0c5e367912ff",
+  "example_display_definition_sha256": "06c25de6c9e6229973b785b138b2f3ac892d8241cf78d8bc6155a19d608d85f5"
+}
